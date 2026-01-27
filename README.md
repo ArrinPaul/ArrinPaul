@@ -1,7 +1,12 @@
 ## Hi there 👋
 
-- 🌱 I’m currently learning 
-- 👯 I’m looking to collaborate on 
+A passionate AIML Student
+
+🌍  I'm based in India
+🖥️  See my portfolio at ArrinPaul
+📬 You can contact me at arrinpaul11@gmail.com
+🧠  I'm currently improving my Typescript skills
+🤝  I'm open to collaborating on ML and TypeScript projects
 
 
 
