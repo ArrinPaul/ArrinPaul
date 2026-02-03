@@ -21,7 +21,7 @@ A passionate AIML Student
 ![](https://nirzak-streak-stats.vercel.app/?user=ArrinPaul&theme=dark&hide_border=false)<br/>
 
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=ArrinPaul&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)<br/>
-<sub>*Note: Language statistics are generated from repository data and may not reflect actual coding time or all private contributions. Check the [official GitHub profile](https://github.com/ArrinPaul) for complete information.*</sub>
+
 
 ## 🏆 GitHub Trophies
 ![](https://github-profile-trophy.vercel.app/?username=ArrinPaul&theme=radical&no-frame=false&no-bg=true&margin-w=4)
