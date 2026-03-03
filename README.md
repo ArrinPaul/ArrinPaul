@@ -4,7 +4,7 @@ A passionate AIML Student
 
 - 🌍  I'm based in India
 - 🖥️  See my portfolio at ArrinPaul
-- 📬 You can contact me at arrinpaul11@gmail.com
+- 📬 You can contact me at yarrinpaul11@gmail.com
 - 🧠  I'm currently improving my Typescript skills
 - 🤝  I'm open to collaborating on ML and TypeScript projects
 
