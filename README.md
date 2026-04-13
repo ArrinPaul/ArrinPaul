@@ -25,11 +25,11 @@
 ## :bar_chart: View GitHub Stats
 
 <div align="center">
- <img src="https://github-readme-stats.vercel.app/api?username=ArrinPaul&show_icons=true&theme=dark&card_width=700&card_height=200">
+ <img src="https://github-readme-stats-fast.vercel.app/api?username=ArrinPaul&show_icons=true&theme=dark&card_width=700&card_height=200">
  <br>
  <img src="https://streak-stats.demolab.com?user=ArrinPaul&theme=dark&card_width=700&card_height=200" alt="GitHub Streak" />
  <br>
- <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ArrinPaul&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact">
+ <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=ArrinPaul&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact">
  <br>
  <img src="https://github-profile-trophy.vercel.app/?username=ArrinPaul&theme=radical&no-frame=false&no-bg=true&margin-w=4">
 </div>
@@ -37,7 +37,6 @@
 <br/>
 
 <!--START_SECTION:activity-->
-- Recent GitHub activity will appear here after the workflow is enabled.
 <!--END_SECTION:activity-->
 
 ## :toolbox: Tools and Frameworks
@@ -94,7 +93,6 @@
 ## :zap: See Coding Activity
 
 <!--START_SECTION:waka-->
-- WakaTime data updates automatically from GitHub Actions.
 <!--END_SECTION:waka-->
 
 ## :sparkles: Quote of the Session
@@ -106,7 +104,9 @@
 ## :headphones: Turn Up Beats
 
 <div align="center">
-	<img src="https://spotify-recently-played-readme.vercel.app/api?user=jxo82k64bq41srx1w9jg30wy2&width=700&count=3" />
+	<a href="https://open.spotify.com/user/jxo82k64bq41srx1w9jg30wy2" target="_blank">
+		<img src="https://img.shields.io/badge/Spotify-Profile-1DB954?style=for-the-badge&logo=spotify&logoColor=white" alt="Spotify Profile" />
+	</a>
 </div>
 
 ## :snake: Snake Animation
