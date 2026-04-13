@@ -18,7 +18,7 @@
 - :man_technologist: My projects and code are on GitHub.
 - :earth_asia: I'm based in India.
 - :mailbox_with_mail: You can contact me at **yarrinpaul11@gmail.com**
-- :page_facing_up: Resume/CV: add your link here
+- :page_facing_up: Resume/CV: [View Resume](https://drive.google.com/file/d/12KhZDhc-D0kdnlsPQUXKVdZdNzJPhUkW/view?usp=sharing)
 - :brain: I'm currently learning about [AI Agents](https://www.ibm.com/think/topics/ai-agents) and Machine Learning.
 - :handshake: I'm open to collaborating on ML and TypeScript projects.
 
