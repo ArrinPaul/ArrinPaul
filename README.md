@@ -32,6 +32,10 @@
  <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=ArrinPaul&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact">
 </div>
 
+<div align="center">
+	<img src="https://github-profile-trophy-tawny.vercel.app/?username=ArrinPaul&theme=darkhub&column=3&margin-w=8&margin-h=8&no-frame=true&no-bg=true" alt="GitHub trophies" />
+</div>
+
 <br/>
 
 <!--START_SECTION:activity-->
@@ -111,17 +115,13 @@
 ## :headphones: Turn Up Beats
 
 <div align="center">
-	<img src="https://spotify-recently-played-readme.vercel.app/api?user=jxo82k64bq41srx1w9jg30wy2&width=700&count=3" alt="Spotify recently played" />
-</div>
-
-## :snake: Snake Animation
-
-<div align="center">
-	<img alt="snake animation" src="https://raw.githubusercontent.com/ArrinPaul/ArrinPaul/output/snake.svg" />
+	<a href="https://open.spotify.com/user/jxo82k64bq41srx1w9jg30wy2" target="_blank">
+		<img src="https://img.shields.io/badge/Spotify-Profile-1DB954?style=for-the-badge&logo=spotify&logoColor=white" alt="Spotify profile" />
+	</a>
 </div>
 
 ## :video_game: Sizzling The Feed
 
 <div align="center">
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/ArrinPaul/ArrinPaul/output/pacman-contribution-graph.svg" />
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/ArrinPaul/ArrinPaul/output/pacman-contribution-graph-dark.svg" />
 </div>
