@@ -32,11 +32,7 @@
  <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=ArrinPaul&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact">
 </div>
 
-<div align="center">
-	<img src="https://github-profile-trophy-tawny.vercel.app/?username=ArrinPaul&theme=darkhub&column=3&margin-w=8&margin-h=8&no-frame=true&no-bg=true" alt="GitHub trophies" />
-</div>
 
-<br/>
 
 <!--START_SECTION:activity-->
 <!--END_SECTION:activity-->
@@ -115,9 +111,7 @@
 ## :headphones: Turn Up Beats
 
 <div align="center">
-	<a href="https://open.spotify.com/user/jxo82k64bq41srx1w9jg30wy2" target="_blank">
-		<img src="https://img.shields.io/badge/Spotify-Profile-1DB954?style=for-the-badge&logo=spotify&logoColor=white" alt="Spotify profile" />
-	</a>
+	<img src="https://spotify-recently-played-readme.vercel.app/api?user=jxo82k64bq41srx1w9jg30wy2&unique=true" alt="Spotify recently played" />
 </div>
 
 ## :video_game: Sizzling The Feed
