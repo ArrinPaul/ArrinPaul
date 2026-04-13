@@ -91,15 +91,6 @@
 ## :zap: See Coding Activity
 
 <!--START_SECTION:waka-->
-<div align="center">
-
-<img src="https://img.shields.io/badge/WakaTime-Connect_Your_Account-7e57c2?style=for-the-badge&logo=wakatime&logoColor=white" alt="WakaTime" />
-
-</div>
-
-<div align="center">
-	<img src="https://github-readme-stats.vercel.app/api/wakatime?username=ArrinPaul&theme=dark&hide_border=false" alt="WakaTime stats" />
-</div>
 <!--END_SECTION:waka-->
 
 ## :sparkles: Quote of the Session
