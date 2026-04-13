@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Arrin Paul</h1>
+<h1 align="center">Hi :wave:, I'm Arrin Paul</h1>
 <h4 align="center">A Passionate AIML student</h4>
 
 <div align="center">
@@ -13,22 +13,16 @@
 </a>
 </div>
 
-## 💼 See My Works
+## :briefcase: See My Works
 
-- 👨‍💻 My projects and code are on GitHub.
-- 🌍 I'm based in India.
-- 📬 You can contact me at **yarrinpaul11@gmail.com**
-- 📄 Resume/CV: add your link here
-- 🧠 I'm currently learning about [AI Agents](https://www.ibm.com/think/topics/ai-agents) and Machine Learning.
-- 🤝 I'm open to collaborating on ML and TypeScript projects.
+- :man_technologist: My projects and code are on GitHub.
+- :earth_asia: I'm based in India.
+- :mailbox_with_mail: You can contact me at **yarrinpaul11@gmail.com**
+- :page_facing_up: Resume/CV: add your link here
+- :brain: I'm currently learning about [AI Agents](https://www.ibm.com/think/topics/ai-agents) and Machine Learning.
+- :handshake: I'm open to collaborating on ML and TypeScript projects.
 
-## 📝 Recently Read Posts
-
-<!-- BLOG-POST-LIST:START -->
-- Add your blog feed workflow here to populate this section.
-<!-- BLOG-POST-LIST:END -->
-
-## 📊 View GitHub Stats
+## :bar_chart: View GitHub Stats
 
 <div align="center">
  <img src="https://github-readme-stats.vercel.app/api?username=ArrinPaul&show_icons=true&theme=dark&card_width=700&card_height=200">
@@ -46,7 +40,7 @@
 - Recent GitHub activity will appear here after the workflow is enabled.
 <!--END_SECTION:activity-->
 
-## 👨‍💻 Tools and Frameworks
+## :toolbox: Tools and Frameworks
 <div align="center">
 <table>
 <tr><td valign="top" width="33%">
@@ -97,37 +91,37 @@
 </table>
 </div>
 
-## 👯 See StackExchange Activity
-
-<!-- STACKOVERFLOW:START -->
-- Add your Stack Overflow feed workflow here to populate this section.
-<!-- STACKOVERFLOW:END -->
-
-## 🔝 See Coding Activity
+## :zap: See Coding Activity
 
 <!--START_SECTION:waka-->
-- Add your WakaTime API key and GitHub token to populate this section.
+- WakaTime data updates automatically from GitHub Actions.
 <!--END_SECTION:waka-->
 
-## 😜 Quote of the Session
+## :sparkles: Quote of the Session
 
 <div align="center">
 	<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark"/>
 </div>
 
-## 🎧 Turn Up Beats
+## :headphones: Turn Up Beats
 
 <div align="center">
-	<img src="https://spotify-recently-played-readme.vercel.app/api?user=YOUR_SPOTIFY_USER_ID&width=700&count=3" />
+	<img src="https://spotify-recently-played-readme.vercel.app/api?user=SPOTIFY_USER_ID_HERE&width=700&count=3" />
 </div>
 
-## 🐍 Snake Animation
+Replace `SPOTIFY_USER_ID_HERE` with your Spotify user id to enable this card.
+
+## :snake: Snake Animation
 
 <div align="center">
-	<img src="https://raw.githubusercontent.com/ArrinPaul/ArrinPaul/output/snake.svg" alt="snake animation" />
+<picture>
+	<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ArrinPaul/ArrinPaul/output/snake-dark.svg" />
+	<source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ArrinPaul/ArrinPaul/output/snake-light.svg" />
+	<img alt="snake animation" src="https://raw.githubusercontent.com/ArrinPaul/ArrinPaul/output/snake-dark.svg" />
+</picture>
 </div>
 
-## 🐍 Sizzling The Feed
+## :video_game: Sizzling The Feed
 
 <div align="center">
 <picture>
