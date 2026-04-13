@@ -30,8 +30,6 @@
  <img src="https://streak-stats.demolab.com?user=ArrinPaul&theme=dark&card_width=700&card_height=200" alt="GitHub Streak" />
  <br>
  <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=ArrinPaul&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact">
- <br>
- <img src="https://github-profile-trophy.vercel.app/?username=ArrinPaul&theme=radical&no-frame=false&no-bg=true&margin-w=4">
 </div>
 
 <br/>
@@ -93,6 +91,15 @@
 ## :zap: See Coding Activity
 
 <!--START_SECTION:waka-->
+<div align="center">
+
+<img src="https://img.shields.io/badge/WakaTime-Connect_Your_Account-7e57c2?style=for-the-badge&logo=wakatime&logoColor=white" alt="WakaTime" />
+
+</div>
+
+<div align="center">
+	<img src="https://github-readme-stats.vercel.app/api/wakatime?username=ArrinPaul&theme=dark&hide_border=false" alt="WakaTime stats" />
+</div>
 <!--END_SECTION:waka-->
 
 ## :sparkles: Quote of the Session
@@ -104,27 +111,17 @@
 ## :headphones: Turn Up Beats
 
 <div align="center">
-	<a href="https://open.spotify.com/user/jxo82k64bq41srx1w9jg30wy2" target="_blank">
-		<img src="https://img.shields.io/badge/Spotify-Profile-1DB954?style=for-the-badge&logo=spotify&logoColor=white" alt="Spotify Profile" />
-	</a>
+	<img src="https://spotify-recently-played-readme.vercel.app/api?user=jxo82k64bq41srx1w9jg30wy2&width=700&count=3" alt="Spotify recently played" />
 </div>
 
 ## :snake: Snake Animation
 
 <div align="center">
-<picture>
-	<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ArrinPaul/ArrinPaul/output/snake-dark.svg" />
-	<source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ArrinPaul/ArrinPaul/output/snake-light.svg" />
-	<img alt="snake animation" src="https://raw.githubusercontent.com/ArrinPaul/ArrinPaul/output/snake-dark.svg" />
-</picture>
+	<img alt="snake animation" src="https://raw.githubusercontent.com/ArrinPaul/ArrinPaul/output/snake.svg" />
 </div>
 
 ## :video_game: Sizzling The Feed
 
 <div align="center">
-<picture>
-	<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ArrinPaul/ArrinPaul/output/pacman-contribution-graph-dark.svg">
-	<source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ArrinPaul/ArrinPaul/output/pacman-contribution-graph.svg">
-	<img alt="pacman contribution graph" src="https://raw.githubusercontent.com/ArrinPaul/ArrinPaul/output/pacman-contribution-graph.svg">
-</picture>
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/ArrinPaul/ArrinPaul/output/pacman-contribution-graph.svg" />
 </div>
