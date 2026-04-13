@@ -106,7 +106,7 @@
 ## :headphones: Turn Up Beats
 
 <div align="center">
-	<img src="https://spotify-recently-played-readme.vercel.app/api?user=SPOTIFY_USER_ID_HERE&width=700&count=3" />
+	<img src="https://spotify-recently-played-readme.vercel.app/api?user=&width=700&count=3" />
 </div>
 
 Replace `SPOTIFY_USER_ID_HERE` with your Spotify user id to enable this card.
