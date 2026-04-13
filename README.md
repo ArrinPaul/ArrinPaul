@@ -110,9 +110,11 @@
 
 ## :headphones: Turn Up Beats
 
-<div align="center">
-	<img src="https://spotify-recently-played-readme.vercel.app/api?user=jxo82k64bq41srx1w9jg30wy2&unique=true" alt="Spotify recently played" />
-</div>
+<p align="center">
+  <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=jxo82k64bq41srx1w9jg30wy2&redirect=true">
+    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=jxo82k64bq41srx1w9jg30wy2&cover_image=true&theme=spotify-embed&show_offline=true&background_color=121212&interchange=false&profanity=false&mode=dark&bar_color=53b14f&bar_color_cover=false">
+  </a>
+</p>
 
 ## :video_game: Sizzling The Feed
 
