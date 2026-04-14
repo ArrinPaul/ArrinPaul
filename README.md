@@ -91,11 +91,32 @@
 ## :zap: See Coding Activity
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-2%20hrs%2032%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-2%20hrs%2040%20mins-blue?style=flat)
 
 ![Profile Views](http://img.shields.io/badge/Profile%20Views-1-blue?style=flat)
 
 ![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-1.37%20million%20lines%20of%20code-blue?style=flat)
+
+**I'm a Night 🦉** 
+
+```text
+🌞 Morning                174 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.47 % 
+🌆 Daytime                459 commits         █████████░░░░░░░░░░░░░░░░   35.53 % 
+🌃 Evening                456 commits         █████████░░░░░░░░░░░░░░░░   35.29 % 
+🌙 Night                  203 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.71 % 
+```
+📅 **I'm Most Productive on Tuesday** 
+
+```text
+Monday                   209 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.18 % 
+Tuesday                  262 commits         █████░░░░░░░░░░░░░░░░░░░░   20.28 % 
+Wednesday                123 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   09.52 % 
+Thursday                 145 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.22 % 
+Friday                   179 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.85 % 
+Saturday                 119 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   09.21 % 
+Sunday                   255 commits         █████░░░░░░░░░░░░░░░░░░░░   19.74 % 
+```
+
 
 📊 **This Week I Spent My Time On** 
 
@@ -141,7 +162,7 @@ HTML                     1 repo              █░░░░░░░░░░�
 ![Lines of Code chart](https://raw.githubusercontent.com/ArrinPaul/ArrinPaul/main/assets/bar_graph.png)
 
 
- Last Updated on 14/04/2026 05:26:47 UTC
+ Last Updated on 14/04/2026 05:33:00 UTC
 <!--END_SECTION:waka-->
 
 ## :sparkles: Quote of the Session
