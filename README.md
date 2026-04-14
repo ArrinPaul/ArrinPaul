@@ -91,13 +91,12 @@
 ## :zap: See Coding Activity
 
 <!--START_SECTION:waka-->
-<div align="center">
-  <img src="https://img.shields.io/badge/WakaTime-Live%20Coding%20Stats-7e57c2?style=for-the-badge&logo=wakatime&logoColor=white" alt="WakaTime" />
-</div>
+![Code Time](http://img.shields.io/badge/Code%20Time-2%20hrs%2032%20mins-blue?style=flat)
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=ArrinPaul&theme=dark&hide_border=false" alt="WakaTime stats" />
-</div>
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-1.37%20million%20lines%20of%20code-blue?style=flat)
+
+
+ Last Updated on 14/04/2026 05:20:39 UTC
 <!--END_SECTION:waka-->
 
 ## :sparkles: Quote of the Session
