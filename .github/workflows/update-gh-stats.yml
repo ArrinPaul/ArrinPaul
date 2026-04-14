@@ -1,0 +1,32 @@
+name: Update GitHub Stats Cache
+
+on:
+  schedule:
+    # Run every 24 hours at 3:00 AM UTC (1 hour after activity update)
+    - cron: '0 3 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update cache ID in GitHub Stats
+        run: |
+          # Get current timestamp to use as cache buster
+          TIMESTAMP=$(date +%s)
+          
+          # Update the cache_id parameter with current timestamp
+          sed -i "s/cache_id=[0-9]*\|&cache_id=[0-9]*/cache_id=$TIMESTAMP/g" README.md
+          
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git diff-index --quiet HEAD || git commit -m "Updated GitHub Stats cache"
+          git push
