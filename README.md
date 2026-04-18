@@ -35,6 +35,8 @@
 
 
 <!--START_SECTION:activity-->
+1. 🎉 Merged PR [#2](https://github.com/ArrinPaul/Eventra/pull/2) in [ArrinPaul/Eventra](https://github.com/ArrinPaul/Eventra)
+2. 💪 Opened PR [#2](https://github.com/ArrinPaul/Eventra/pull/2) in [ArrinPaul/Eventra](https://github.com/ArrinPaul/Eventra)
 <!--END_SECTION:activity-->
 
 ## :toolbox: Tools and Frameworks
