@@ -35,8 +35,8 @@
 
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#2](https://github.com/ArrinPaul/Eventra/pull/2) in [ArrinPaul/Eventra](https://github.com/ArrinPaul/Eventra)
-2. 💪 Opened PR [#2](https://github.com/ArrinPaul/Eventra/pull/2) in [ArrinPaul/Eventra](https://github.com/ArrinPaul/Eventra)
+1. 🎉 Merged PR [#2](https://github.com/ArrinPaul/Automation-Version-1/pull/2) in [ArrinPaul/Automation-Version-1](https://github.com/ArrinPaul/Automation-Version-1)
+2. 💪 Opened PR [#2](https://github.com/ArrinPaul/Automation-Version-1/pull/2) in [ArrinPaul/Automation-Version-1](https://github.com/ArrinPaul/Automation-Version-1)
 <!--END_SECTION:activity-->
 
 ## :toolbox: Tools and Frameworks
