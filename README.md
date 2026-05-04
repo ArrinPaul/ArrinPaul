@@ -25,11 +25,11 @@
 ## :bar_chart: View GitHub Stats
 
 <div align="center">
- <img src="https://github-readme-stats-fast.vercel.app/api?username=ArrinPaul&show_icons=true&theme=dark&card_width=700&card_height=200cache_id=1777771706">
+ <img src="https://github-readme-stats-fast.vercel.app/api?username=ArrinPaul&show_icons=true&theme=dark&card_width=700&card_height=200cache_id=1777890045">
  <br>
- <img src="https://streak-stats.demolab.com?user=ArrinPaul&theme=dark&card_width=700&card_height=200cache_id=1777771706" alt="GitHub Streak" />
+ <img src="https://streak-stats.demolab.com?user=ArrinPaul&theme=dark&card_width=700&card_height=200cache_id=1777890045" alt="GitHub Streak" />
  <br>
- <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=ArrinPaul&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compactcache_id=1777771706">
+ <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=ArrinPaul&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compactcache_id=1777890045">
 </div>
 
 
