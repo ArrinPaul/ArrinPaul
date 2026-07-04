@@ -25,16 +25,18 @@
 ## :bar_chart: View GitHub Stats
 
 <div align="center">
- <img src="https://github-readme-stats-fast.vercel.app/api?username=ArrinPaul&show_icons=true&theme=dark&card_width=700&card_height=200&cache_id=1">
+ <img src="https://github-readme-stats-fast.vercel.app/api?username=ArrinPaul&show_icons=true&theme=dark&card_width=700&card_height=200cache_id=1783075513">
  <br>
- <img src="https://streak-stats.demolab.com?user=ArrinPaul&theme=dark&card_width=700&card_height=200&cache_id=1" alt="GitHub Streak" />
+ <img src="https://streak-stats.demolab.com?user=ArrinPaul&theme=dark&card_width=700&card_height=200cache_id=1783075513" alt="GitHub Streak" />
  <br>
- <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=ArrinPaul&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact&cache_id=1">
+ <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=ArrinPaul&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compactcache_id=1783075513">
 </div>
 
 
 
 <!--START_SECTION:activity-->
+1. 🗣 Commented on [#1](https://github.com/ArrinPaul/Landsat/pull/1#issuecomment-4578469129) in [ArrinPaul/Landsat](https://github.com/ArrinPaul/Landsat)
+2. 🎉 Merged PR [#3](https://github.com/ArrinPaul/Eventra/pull/3) in [ArrinPaul/Eventra](https://github.com/ArrinPaul/Eventra)
 <!--END_SECTION:activity-->
 
 ## :toolbox: Tools and Frameworks
@@ -91,45 +93,45 @@
 ## :zap: See Coding Activity
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-3%20hrs%209%20mins-blue?style=flat)
+![Code Time](http://img.shields.io/badge/Code%20Time-48%20hrs%2015%20mins-blue?style=flat)
 
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-1.37%20million%20lines%20of%20code-blue?style=flat)
+![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-1.79%20million%20lines%20of%20code-blue?style=flat)
 
-**I'm a Night 🦉** 
+**I'm an Early 🐤** 
 
 ```text
-🌞 Morning                175 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.57 % 
-🌆 Daytime                457 commits         █████████░░░░░░░░░░░░░░░░   35.43 % 
-🌃 Evening                455 commits         █████████░░░░░░░░░░░░░░░░   35.27 % 
-🌙 Night                  203 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.74 % 
+🌞 Morning                267 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.43 % 
+🌆 Daytime                676 commits         █████████░░░░░░░░░░░░░░░░   36.54 % 
+🌃 Evening                581 commits         ████████░░░░░░░░░░░░░░░░░   31.41 % 
+🌙 Night                  326 commits         ████░░░░░░░░░░░░░░░░░░░░░   17.62 % 
 ```
 📅 **I'm Most Productive on Tuesday** 
 
 ```text
-Monday                   209 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.20 % 
-Tuesday                  260 commits         █████░░░░░░░░░░░░░░░░░░░░   20.16 % 
-Wednesday                123 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   09.53 % 
-Thursday                 145 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.24 % 
-Friday                   179 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.88 % 
-Saturday                 119 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   09.22 % 
-Sunday                   255 commits         █████░░░░░░░░░░░░░░░░░░░░   19.77 % 
+Monday                   263 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.22 % 
+Tuesday                  366 commits         █████░░░░░░░░░░░░░░░░░░░░   19.78 % 
+Wednesday                187 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.11 % 
+Thursday                 258 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.95 % 
+Friday                   258 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.95 % 
+Saturday                 231 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.49 % 
+Sunday                   287 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.51 % 
 ```
 
 
 **I Mostly Code in TypeScript** 
 
 ```text
-TypeScript               17 repos            █████████████████░░░░░░░░   68.00 % 
-Python                   5 repos             █████░░░░░░░░░░░░░░░░░░░░   20.00 % 
-Java                     1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   04.00 % 
-JavaScript               1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   04.00 % 
-HTML                     1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   04.00 % 
+TypeScript               19 repos            ████████████████░░░░░░░░░   63.33 % 
+Python                   8 repos             ███████░░░░░░░░░░░░░░░░░░   26.67 % 
+Java                     1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   03.33 % 
+JavaScript               1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   03.33 % 
+HTML                     1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   03.33 % 
 ```
 
 
 
 
- Last Updated on 14/04/2026 05:46:45 UTC
+ Last Updated on 03/07/2026 10:35:23 UTC
 <!--END_SECTION:waka-->
 
 ## :sparkles: Quote of the Session

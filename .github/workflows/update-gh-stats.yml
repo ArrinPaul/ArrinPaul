@@ -1,9 +1,10 @@
 name: Update GitHub Stats Cache
 
 on:
-  schedule:
-    # Run every 24 hours at 3:00 AM UTC (1 hour after activity update)
-    - cron: '0 3 * * *'
+  schedule: # Run every 32 hours
+    - cron: '0 0 * * 0,4'
+    - cron: '0 8 * * 1,5'
+    - cron: '0 16 * * 2,6'
   workflow_dispatch:
 
 jobs:
