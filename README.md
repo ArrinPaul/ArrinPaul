@@ -35,8 +35,8 @@
 
 
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#1](https://github.com/ArrinPaul/Landsat/pull/1#issuecomment-4578469129) in [ArrinPaul/Landsat](https://github.com/ArrinPaul/Landsat)
-2. 🎉 Merged PR [#3](https://github.com/ArrinPaul/Eventra/pull/3) in [ArrinPaul/Eventra](https://github.com/ArrinPaul/Eventra)
+1. 🎉 Merged PR [#1](https://github.com/IEEE-CU/SB-APP/pull/1) in [IEEE-CU/SB-APP](https://github.com/IEEE-CU/SB-APP)
+2. 💪 Opened PR [#1](https://github.com/IEEE-CU/SB-APP/pull/1) in [IEEE-CU/SB-APP](https://github.com/IEEE-CU/SB-APP)
 <!--END_SECTION:activity-->
 
 ## :toolbox: Tools and Frameworks
