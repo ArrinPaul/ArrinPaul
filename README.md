@@ -35,8 +35,8 @@
 
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#2](https://github.com/ArrinPaul/Campus-Connect/pull/2) in [ArrinPaul/Campus-Connect](https://github.com/ArrinPaul/Campus-Connect)
-2. 💪 Opened PR [#2](https://github.com/ArrinPaul/Campus-Connect/pull/2) in [ArrinPaul/Campus-Connect](https://github.com/ArrinPaul/Campus-Connect)
+1. ❌ Closed PR [#9](https://github.com/IEEE-CU/SB-APP/pull/9) in [IEEE-CU/SB-APP](https://github.com/IEEE-CU/SB-APP)
+2. 💪 Opened PR [#9](https://github.com/IEEE-CU/SB-APP/pull/9) in [IEEE-CU/SB-APP](https://github.com/IEEE-CU/SB-APP)
 <!--END_SECTION:activity-->
 
 ## :toolbox: Tools and Frameworks
