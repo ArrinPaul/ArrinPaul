@@ -35,8 +35,8 @@
 
 
 <!--START_SECTION:activity-->
-1. ❌ Closed PR [#9](https://github.com/IEEE-CU/SB-APP/pull/9) in [IEEE-CU/SB-APP](https://github.com/IEEE-CU/SB-APP)
-2. 💪 Opened PR [#9](https://github.com/IEEE-CU/SB-APP/pull/9) in [IEEE-CU/SB-APP](https://github.com/IEEE-CU/SB-APP)
+1. 🎉 Merged PR [#10](https://github.com/IEEE-CU/SB-APP/pull/10) in [IEEE-CU/SB-APP](https://github.com/IEEE-CU/SB-APP)
+2. 💪 Opened PR [#10](https://github.com/IEEE-CU/SB-APP/pull/10) in [IEEE-CU/SB-APP](https://github.com/IEEE-CU/SB-APP)
 <!--END_SECTION:activity-->
 
 ## :toolbox: Tools and Frameworks
