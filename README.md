@@ -47,39 +47,6 @@
   </a>
 </div>
 
-## :rocket: Featured Projects
-
-<div align="center">
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3 align="center">📖 Open Dev Atlas</h3>
-      <p align="center">
-        <a href="https://github.com/ArrinPaul/ArrinPaul/tree/main/open-dev-atlas">
-          <img src="https://img.shields.io/badge/Open_Dev_Atlas-Interactive_Hub-blueviolet?style=for-the-badge&logo=react" alt="Open Dev Atlas" />
-        </a>
-      </p>
-      <p>A shareable, interactive cheat-sheet hub for modern developer workflows. Zero backend dependency, built for speed & GitHub Pages deployment.</p>
-      <p align="center">
-        <code>React</code> • <code>TypeScript</code> • <code>Vite</code>
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h3 align="center">📱 IEEE-CU SB App</h3>
-      <p align="center">
-        <a href="https://github.com/IEEE-CU/SB-APP">
-          <img src="https://img.shields.io/badge/IEEE--CU-Student_Branch_App-006699?style=for-the-badge&logo=github" alt="IEEE-CU SB App" />
-        </a>
-      </p>
-      <p>Official IEEE Student Branch application powering events, updates, and community engagement for student members.</p>
-      <p align="center">
-        <code>Open Source</code> • <code>TypeScript</code> • <code>React Native</code>
-      </p>
-    </td>
-  </tr>
-</table>
-</div>
-
 ## :zap: See Coding Activity
 
 <!--START_SECTION:waka-->
