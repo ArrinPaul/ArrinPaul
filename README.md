@@ -17,7 +17,7 @@
 
 - :man_technologist: My projects and code are on GitHub.
 - :earth_asia: I'm based in India.
-- :mailbox_with_mail: You can contact me at **yarrinpaul11@gmail.com**
+- :mailbox_with_mail: You can contact me at **arrinpaul11@gmail.com**
 - :page_facing_up: Resume/CV: [View Resume](https://drive.google.com/file/d/12KhZDhc-D0kdnlsPQUXKVdZdNzJPhUkW/view?usp=sharing)
 - :brain: I'm currently learning about [AI Agents](https://www.ibm.com/think/topics/ai-agents) and Machine Learning.
 - :handshake: I'm open to collaborating on ML and TypeScript projects.
@@ -25,11 +25,11 @@
 ## :bar_chart: View GitHub Stats
 
 <div align="center">
- <img src="https://github-readme-stats-fast.vercel.app/api?username=ArrinPaul&show_icons=true&theme=dark&card_width=700&card_height=200cache_id=1786956697">
+ <img src="https://github-readme-stats-fast.vercel.app/api?username=ArrinPaul&show_icons=true&theme=dark&card_width=700&card_height=200&cache_id=1786956697">
  <br>
- <img src="https://streak-stats.demolab.com?user=ArrinPaul&theme=dark&card_width=700&card_height=200cache_id=1786956697" alt="GitHub Streak" />
+ <img src="https://streak-stats.demolab.com?user=ArrinPaul&theme=dark&card_width=700&card_height=200&cache_id=1786956697" alt="GitHub Streak" />
  <br>
- <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=ArrinPaul&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compactcache_id=1786956697">
+ <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=ArrinPaul&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact&cache_id=1786956697">
 </div>
 
 
@@ -40,64 +40,49 @@
 <!--END_SECTION:activity-->
 
 ## :toolbox: Tools and Frameworks
+
+<div align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=c,java,py,js,ts,html,css,latex,react,nextjs,angular,nodejs,express,spring,firebase,supabase,neo4j,aws,docker,git,github&perline=11" alt="Tools & Frameworks" />
+  </a>
+</div>
+
+## :rocket: Featured Projects
+
 <div align="center">
 <table>
-<tr><td valign="top" width="33%">
-
-### Languages
-<div align="center">
-<a href="https://www.cprogramming.com/" target="_blank"><img style="margin: 10px" src="https://img.shields.io/badge/C-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white" alt="C" height="50" /></a>
-<a href="https://www.java.com/" target="_blank"><img style="margin: 10px" src="https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" height="50" /></a>
-<a href="https://www.python.org/" target="_blank"><img style="margin: 10px" src="https://img.shields.io/badge/Python-3776AB.svg?style=for-the-badge&logo=python&logoColor=white" alt="Python" height="50" /></a>
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img style="margin: 10px" src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" height="50" /></a>
-<a href="https://www.typescriptlang.org/" target="_blank"><img style="margin: 10px" src="https://img.shields.io/badge/TypeScript-3178C6.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" height="50" /></a>
-<a href="https://www.w3.org/TR/html5/" target="_blank"><img style="margin: 10px" src="https://img.shields.io/badge/HTML5-E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML" height="50" /></a>
-<a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank"><img style="margin: 10px" src="https://img.shields.io/badge/CSS3-1572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS" height="50" /></a>
-<a href="https://www.latex-project.org/" target="_blank"><img style="margin: 10px" src="https://img.shields.io/badge/LaTeX-008080.svg?style=for-the-badge&logo=latex&logoColor=white" alt="LaTeX" height="50" /></a>
-</div>
-
-</td><td valign="top" width="33%">
-
-### Frontend
-<div align="center">
-<a href="https://reactjs.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg" alt="React" height="50" /></a>
-<a href="https://nextjs.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/nextjs.png" alt="Next.js" height="50" /></a>
-<a href="https://angular.dev/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/angularjs-original.svg" alt="Angular" height="50" /></a>
-</div>
-
-</td><td valign="top" width="33%">
-
-### Backend & Data
-<div align="center">
-<a href="https://nodejs.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/nodejs-original-wordmark.svg" alt="Node.js" height="50" /></a>
-<a href="https://spring.io/projects/spring-boot" target="_blank"><img style="margin: 10px" src="https://img.shields.io/badge/Spring_Boot-6DB33F.svg?style=for-the-badge&logo=springboot&logoColor=white" alt="Java Spring Boot" height="50" /></a>
-<a href="https://firebase.google.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/firebase.png" alt="Google Firebase" height="50" /></a>
-<a href="https://supabase.com/" target="_blank"><img style="margin: 10px" src="https://img.shields.io/badge/Supabase-3FCF8E.svg?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase" height="50" /></a>
-<a href="https://neo4j.com/" target="_blank"><img style="margin: 10px" src="https://img.shields.io/badge/Neo4j-018BFF.svg?style=for-the-badge&logo=neo4j&logoColor=white" alt="Neo4j" height="50" /></a>
-<a href="https://www.convex.dev/" target="_blank"><img style="margin: 10px" src="https://img.shields.io/badge/Convex-111827.svg?style=for-the-badge&logoColor=white" alt="Convex" height="50" /></a>
-</div>
-
-</td></tr>
-<tr><td colspan="3" valign="top">
-
-### Cloud, Databases & Tools
-<div align="center">
-<a href="https://aws.amazon.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/amazonwebservices-original-wordmark.svg" alt="AWS" height="50" /></a>
-<a href="https://github.com/" target="_blank"><img style="margin: 10px" src="https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" height="50" /></a>
-</div>
-
-</td></tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3 align="center">📖 Open Dev Atlas</h3>
+      <p align="center">
+        <a href="https://github.com/ArrinPaul/ArrinPaul/tree/main/open-dev-atlas">
+          <img src="https://img.shields.io/badge/Open_Dev_Atlas-Interactive_Hub-blueviolet?style=for-the-badge&logo=react" alt="Open Dev Atlas" />
+        </a>
+      </p>
+      <p>A shareable, interactive cheat-sheet hub for modern developer workflows. Zero backend dependency, built for speed & GitHub Pages deployment.</p>
+      <p align="center">
+        <code>React</code> • <code>TypeScript</code> • <code>Vite</code>
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="center">📱 IEEE-CU SB App</h3>
+      <p align="center">
+        <a href="https://github.com/IEEE-CU/SB-APP">
+          <img src="https://img.shields.io/badge/IEEE--CU-Student_Branch_App-006699?style=for-the-badge&logo=github" alt="IEEE-CU SB App" />
+        </a>
+      </p>
+      <p>Official IEEE Student Branch application powering events, updates, and community engagement for student members.</p>
+      <p align="center">
+        <code>Open Source</code> • <code>TypeScript</code> • <code>React Native</code>
+      </p>
+    </td>
+  </tr>
 </table>
 </div>
 
 ## :zap: See Coding Activity
 
 <!--START_SECTION:waka-->
-![Code Time](http://img.shields.io/badge/Code%20Time-36%20hrs%207%20mins-blue?style=flat)
-
-![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-32%20hrs%2044%20mins-blue?style=flat)
-
-![Lines of code](https://img.shields.io/badge/From%20Hello%20World%20I%27ve%20Written-3.21%20million%20lines%20of%20code-blue?style=flat)
 
 **I'm an Early 🐤** 
 
