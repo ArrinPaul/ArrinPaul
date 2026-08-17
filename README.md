@@ -1,4 +1,4 @@
-<h1 align="center">Hi :wave:, I'm Arrin Paul</h1>
+<h1 align="center">Hi, I'm Arrin Paul</h1>
 <h4 align="center">A Passionate AIML student</h4>
 
 <div align="center">
@@ -13,16 +13,16 @@
 </a>
 </div>
 
-## :briefcase: See My Works
+## See My Works
 
-- :man_technologist: My projects and code are on GitHub.
-- :earth_asia: I'm based in India.
-- :mailbox_with_mail: You can contact me at **arrinpaul11@gmail.com**
-- :page_facing_up: Resume/CV: [View Resume](https://drive.google.com/file/d/12KhZDhc-D0kdnlsPQUXKVdZdNzJPhUkW/view?usp=sharing)
-- :brain: I'm currently learning about [AI Agents](https://www.ibm.com/think/topics/ai-agents) and Machine Learning.
-- :handshake: I'm open to collaborating on ML and TypeScript projects.
+- My projects and code are on GitHub.
+- I'm based in India.
+- You can contact me at **arrinpaul11@gmail.com**
+- Resume/CV: [View Resume](https://drive.google.com/file/d/12KhZDhc-D0kdnlsPQUXKVdZdNzJPhUkW/view?usp=sharing)
+- I'm currently learning about [AI Agents](https://www.ibm.com/think/topics/ai-agents) and Machine Learning.
+- I'm open to collaborating on ML and TypeScript projects.
 
-## :bar_chart: View GitHub Stats
+## View GitHub Stats
 
 <div align="center">
  <img src="https://github-readme-stats-fast.vercel.app/api?username=ArrinPaul&show_icons=true&theme=dark&card_width=700&card_height=200&cache_id=1786956697">
@@ -39,7 +39,7 @@
 <!--START_SECTION:activity-->
 <!--END_SECTION:activity-->
 
-## :toolbox: Tools and Frameworks
+## Tools and Frameworks
 
 <div align="center">
   <a href="https://skillicons.dev">
@@ -47,19 +47,19 @@
   </a>
 </div>
 
-## :zap: See Coding Activity
+## See Coding Activity
 
 <!--START_SECTION:waka-->
 
-**I'm an Early 🐤** 
+**I'm an Early Bird** 
 
 ```text
-🌞 Morning                378 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.37 % 
-🌆 Daytime                1026 commits        ██████████░░░░░░░░░░░░░░░   39.01 % 
-🌃 Evening                821 commits         ████████░░░░░░░░░░░░░░░░░   31.22 % 
-🌙 Night                  405 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.40 % 
+Morning                378 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.37 % 
+Daytime                1026 commits        ██████████░░░░░░░░░░░░░░░   39.01 % 
+Evening                821 commits         ████████░░░░░░░░░░░░░░░░░   31.22 % 
+Night                  405 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.40 % 
 ```
-📅 **I'm Most Productive on Tuesday** 
+**I'm Most Productive on Tuesday** 
 
 ```text
 Monday                   405 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.40 % 
@@ -87,13 +87,13 @@ HTML                     1 repo              █░░░░░░░░░░�
  Last Updated on 17/08/2026 08:42:19 UTC
 <!--END_SECTION:waka-->
 
-## :sparkles: Quote of the Session
+## Quote of the Session
 
 <div align="center">
 	<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark"/>
 </div>
 
-## :headphones: Turn Up Beats
+## Turn Up Beats
 
 <p align="center">
   <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=jxo82k64bq41srx1w9jg30wy2&redirect=true">
@@ -101,7 +101,7 @@ HTML                     1 repo              █░░░░░░░░░░�
   </a>
 </p>
 
-## :video_game: Sizzling The Feed
+## Sizzling The Feed
 
 <div align="center">
   <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/ArrinPaul/ArrinPaul/output/pacman-contribution-graph-dark.svg" />
