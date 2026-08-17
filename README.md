@@ -37,8 +37,6 @@
 
 
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#10](https://github.com/IEEE-CU/SB-APP/pull/10) in [IEEE-CU/SB-APP](https://github.com/IEEE-CU/SB-APP)
-2. 💪 Opened PR [#10](https://github.com/IEEE-CU/SB-APP/pull/10) in [IEEE-CU/SB-APP](https://github.com/IEEE-CU/SB-APP)
 <!--END_SECTION:activity-->
 
 ## :toolbox: Tools and Frameworks
@@ -71,13 +69,6 @@ Thursday                 286 commits         ███░░░░░░░░�
 Friday                   359 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.65 % 
 Saturday                 325 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.36 % 
 Sunday                   428 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.27 % 
-```
-
-
-🤖 **AI Coding This Week** 
-
-```text
-No AI Coding Activity Tracked This Week
 ```
 
 **I Mostly Code in TypeScript** 
