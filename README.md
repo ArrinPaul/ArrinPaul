@@ -34,19 +34,6 @@
  <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=ArrinPaul&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact&cache_id=1787070177">
 </div>
 
-
-
-<!--START_SECTION:activity-->
-1. 🎉 Merged PR [#2](https://github.com/ArrinPaul/AdaptAI/pull/2) in [ArrinPaul/AdaptAI](https://github.com/ArrinPaul/AdaptAI)
-2. 💪 Opened PR [#2](https://github.com/ArrinPaul/AdaptAI/pull/2) in [ArrinPaul/AdaptAI](https://github.com/ArrinPaul/AdaptAI)
-3. 🎉 Merged PR [#1](https://github.com/ArrinPaul/AdaptAI/pull/1) in [ArrinPaul/AdaptAI](https://github.com/ArrinPaul/AdaptAI)
-4. 💪 Opened PR [#1](https://github.com/ArrinPaul/AdaptAI/pull/1) in [ArrinPaul/AdaptAI](https://github.com/ArrinPaul/AdaptAI)
-5. 🎉 Merged PR [#3](https://github.com/ArrinPaul/Landsat/pull/3) in [ArrinPaul/Landsat](https://github.com/ArrinPaul/Landsat)
-6. 💪 Opened PR [#3](https://github.com/ArrinPaul/Landsat/pull/3) in [ArrinPaul/Landsat](https://github.com/ArrinPaul/Landsat)
-7. 🎉 Merged PR [#2](https://github.com/ArrinPaul/Landsat/pull/2) in [ArrinPaul/Landsat](https://github.com/ArrinPaul/Landsat)
-8. 💪 Opened PR [#2](https://github.com/ArrinPaul/Landsat/pull/2) in [ArrinPaul/Landsat](https://github.com/ArrinPaul/Landsat)
-<!--END_SECTION:activity-->
-
 ## Tools and Frameworks
 
 <div align="center">
