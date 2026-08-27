@@ -25,13 +25,13 @@
 ## View GitHub Stats
 
 <div align="center">
- <img src="https://github-readme-stats-fast.vercel.app/api?username=ArrinPaul&show_icons=true&theme=dark&card_width=700&card_height=200&cache_id=1787675289">
+ <img src="https://github-readme-stats-fast.vercel.app/api?username=ArrinPaul&show_icons=true&theme=dark&card_width=700&card_height=200&cache_id=1787807944">
  <br>
- <img src="https://streak-stats.demolab.com?user=ArrinPaul&theme=dark&card_width=700&card_height=200&cache_id=1787675289" alt="GitHub Streak" />
+ <img src="https://streak-stats.demolab.com?user=ArrinPaul&theme=dark&card_width=700&card_height=200&cache_id=1787807944" alt="GitHub Streak" />
  <br>
  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ArrinPaul&radius=16&theme=github-dark&area=true&order=5" alt="GitHub Activity Graph" />
  <br>
- <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=ArrinPaul&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact&cache_id=1787675289">
+ <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=ArrinPaul&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact&cache_id=1787807944">
 </div>
 
 ## Tools and Frameworks
