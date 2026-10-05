@@ -10,6 +10,8 @@
 
 Open Dev Atlas is a small single-page app of copy-ready snippets for everyday developer work. It is fully static, so it needs no back end and can be hosted anywhere that serves files.
 
+**Live demo:** <https://arrinpaul.github.io/ArrinPaul/>
+
 > This project lives in the `open-dev-atlas/` folder of the [ArrinPaul/ArrinPaul](https://github.com/ArrinPaul/ArrinPaul) profile repository. All commands below are run from inside that folder.
 
 ## Features
@@ -57,13 +59,15 @@ Titles must be unique, and the tests check that every item has a valid category,
 
 ## Deploying
 
-The build is static. To host it under a sub-path, set `BASE_PATH` when building, for example for GitHub Pages:
+The live demo is deployed to GitHub Pages by `.github/workflows/open-dev-atlas-pages.yml` on every push to `main` that touches this folder.
+
+The build is static, so it can be hosted anywhere. To serve it from a sub-path, set `BASE_PATH` when building:
 
 ```bash
 BASE_PATH=/ArrinPaul/ npm run build
 ```
 
-Then publish the contents of `dist/`. There is no deploy workflow in this repository yet.
+Then publish the contents of `dist/`.
 
 ## Project structure
 
@@ -94,7 +98,6 @@ Good first contributions: new snippets, new categories, accessibility improvemen
 - Favorites with local persistence.
 - Import and export of custom cheat-sheet packs.
 - A command palette for faster navigation.
-- A GitHub Pages deploy workflow.
 
 ## License
 

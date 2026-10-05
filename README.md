@@ -56,7 +56,7 @@
 - [Sentinel](https://github.com/ArrinPaul/Sentinel): proof-of-life biometric authentication with liveness and deepfake detection.
 - [AdaptAI](https://github.com/ArrinPaul/AdaptAI): Chrome extension that adapts web pages for accessibility using Gemini and Groq.
 - [AgroTech](https://github.com/ArrinPaul/AgroTech) and [CampusFlow](https://github.com/ArrinPaul/CampusFlow): agriculture operations and student-hub platforms.
-- [Open Dev Atlas](open-dev-atlas): a searchable cheat-sheet app for developers, built with React and Vite (lives in this repo).
+- [Open Dev Atlas](open-dev-atlas) ([live](https://arrinpaul.github.io/ArrinPaul/)): a searchable cheat-sheet app for developers, built with React and Vite (lives in this repo).
 
 ## Tech Stack
 
