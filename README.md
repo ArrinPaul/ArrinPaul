@@ -73,43 +73,38 @@ More on [my GitHub profile](https://github.com/ArrinPaul?tab=repositories), incl
 
 ## See Coding Activity
 
-<!--START_SECTION:waka-->
-**I'm a Night 🦉** 
+<!--START_SECTION:activity-->
+**I'm a Daytime Coder ☀️**
 
 ```text
-🌞 Morning                628 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.58 % 
-🌆 Daytime                1851 commits        █████████░░░░░░░░░░░░░░░░   37.07 % 
-🌃 Evening                1625 commits        ████████░░░░░░░░░░░░░░░░░   32.55 % 
-🌙 Night                  889 commits         ████░░░░░░░░░░░░░░░░░░░░░   17.80 % 
+🌞 Morning               272 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.04 % 
+🌆 Daytime               717 commits         █████████░░░░░░░░░░░░░░░░   37.00 % 
+🌃 Evening               540 commits         ███████░░░░░░░░░░░░░░░░░░   27.86 % 
+🌙 Night                 409 commits         █████░░░░░░░░░░░░░░░░░░░░   21.10 % 
 ```
-📅 **I'm Most Productive on Tuesday** 
+📅 **I'm Most Productive on Tuesday**
 
 ```text
-Monday                   709 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.20 % 
-Tuesday                  1086 commits        █████░░░░░░░░░░░░░░░░░░░░   21.75 % 
-Wednesday                623 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.48 % 
-Thursday                 585 commits         ███░░░░░░░░░░░░░░░░░░░░░░   11.72 % 
-Friday                   634 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.70 % 
-Saturday                 655 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.12 % 
-Sunday                   701 commits         ████░░░░░░░░░░░░░░░░░░░░░   14.04 % 
+Monday                   321 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.56 % 
+Tuesday                  463 commits         ██████░░░░░░░░░░░░░░░░░░░   23.89 % 
+Wednesday                248 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.80 % 
+Thursday                 271 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.98 % 
+Friday                   209 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.78 % 
+Saturday                 248 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.80 % 
+Sunday                   178 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   09.18 % 
 ```
 
-
-**I Mostly Code in TypeScript** 
+**I Mostly Code in TypeScript**
 
 ```text
-TypeScript               26 repos            ██████████████░░░░░░░░░░░   56.52 % 
-Python                   11 repos            ██████░░░░░░░░░░░░░░░░░░░   23.91 % 
-JavaScript               7 repos             ████░░░░░░░░░░░░░░░░░░░░░   15.22 % 
-Java                     1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   02.17 % 
-HTML                     1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   02.17 % 
+TypeScript               15 repos            ██████████████░░░░░░░░░░░   57.69 % 
+Python                   8 repos             ████████░░░░░░░░░░░░░░░░░   30.77 % 
+JavaScript               2 repos             ██░░░░░░░░░░░░░░░░░░░░░░░   07.69 % 
+Java                     1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   03.85 % 
 ```
 
-
-
-
- Last Updated on 05/10/2026 16:50:45 UTC
-<!--END_SECTION:waka-->
+<sub>Based on 1938 commits across 26 public and private repositories (own repos, no forks). Each commit is counted once, even if it is on several branches. Times are in Asia/Kolkata.</sub>
+<!--END_SECTION:activity-->
 
 ## Quote of the Session
 

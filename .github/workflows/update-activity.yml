@@ -1,0 +1,48 @@
+name: Update coding activity
+
+on:
+  schedule: # Six runs a week: Sun/Thu 00:00, Mon/Fri 08:00, Tue/Sat 16:00 UTC (none on Wednesday)
+    - cron: '0 0 * * 0,4'
+    - cron: '0 8 * * 1,5'
+    - cron: '0 16 * * 2,6'
+  workflow_dispatch:
+
+# Share one queue with the stats-cache workflow: both commit to README.md.
+concurrency:
+  group: readme-updates
+  cancel-in-progress: false
+
+jobs:
+  update-activity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # Needs a token that can read private repositories (the GH_TOKEN secret), otherwise the totals
+      # would be lower than the real ones. The script refuses to update the README in that case.
+      - name: Rebuild the activity block from GitHub data
+        run: node scripts/update-activity.mjs
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          REQUIRE_PRIVATE: 'true'
+          ACTIVITY_TZ: Asia/Kolkata
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "Updated coding activity"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push
