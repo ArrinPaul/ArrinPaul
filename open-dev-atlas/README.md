@@ -1,90 +1,101 @@
 # Open Dev Atlas
 
-> A shareable, interactive cheat-sheet hub for modern developers.
+> A searchable, interactive cheat-sheet hub for modern developers.
 
-[![Stars](https://img.shields.io/github/stars/<owner>/<repo>?style=for-the-badge)](https://github.com/<owner>/<repo>/stargazers)
-[![Forks](https://img.shields.io/github/forks/<owner>/<repo>?style=for-the-badge)](https://github.com/<owner>/<repo>/fork)
-[![License](https://img.shields.io/github/license/<owner>/<repo>?style=for-the-badge)](./LICENSE)
-[![Issues](https://img.shields.io/github/issues/<owner>/<repo>?style=for-the-badge)](https://github.com/<owner>/<repo>/issues)
+[![CI](https://github.com/ArrinPaul/ArrinPaul/actions/workflows/open-dev-atlas-ci.yml/badge.svg)](https://github.com/ArrinPaul/ArrinPaul/actions/workflows/open-dev-atlas-ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](./LICENSE)
+![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-5-646CFF?logo=vite&logoColor=white)
 
-Open Dev Atlas is a polished, fork-friendly cheat-sheet experience for common developer workflows. It is designed to be useful on day one, easy to customize, and visually strong enough to stand out in a pinned repository.
+Open Dev Atlas is a small single-page app of copy-ready snippets for everyday developer work. It is fully static, so it needs no back end and can be hosted anywhere that serves files.
+
+> This project lives in the `open-dev-atlas/` folder of the [ArrinPaul/ArrinPaul](https://github.com/ArrinPaul/ArrinPaul) profile repository. All commands below are run from inside that folder.
 
 ## Features
 
-- Searchable, category-based cheat sheets for Git, TypeScript, React, Node.js, Docker, and AI workflows.
-- Copy-to-clipboard snippets for quick reuse.
-- A clean, modern UI with a strong visual identity and responsive layout.
-- Zero back-end dependency, which makes it easy to deploy on GitHub Pages.
-- Content-first structure that encourages contributions and niche expansions.
+- Cheat sheets for Git, TypeScript, React, Node.js, Docker and AI prompting.
+- Search across title, summary, snippet, category and tags. Every word must match, in any order.
+- Category filter chips, a live result count and a clear empty state.
+- One-click copy with a fallback for browsers that block the async Clipboard API, and a visible "Copy failed" state.
+- Keyboard and screen-reader friendly: pressed states on chips, labelled buttons, focusable code blocks and visible focus rings.
+- Responsive layout, and reduced-motion support.
 
-## Tech Stack
+## Getting started
 
-- React
-- TypeScript
-- Vite
-- GitHub Pages-ready static build
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js 18 or newer
-- npm 9 or newer
-
-### Install
+Requires Node.js 18 or newer.
 
 ```bash
+cd open-dev-atlas
 npm install
+npm run dev          # http://localhost:5173
 ```
 
-### Run locally
+| Command | What it does |
+| :--- | :--- |
+| `npm run dev` | Start the dev server |
+| `npm run build` | Type-check, then create a production build in `dist/` |
+| `npm run preview` | Serve the production build locally |
+| `npm run typecheck` | Type-check without building |
+| `npm test` | Run the unit and component tests (Vitest, Testing Library) |
+
+## Adding a cheat sheet
+
+Add an object to `cheatSheets` in `src/data.ts`:
+
+```ts
+{
+  title: 'Undo the last commit',
+  category: 'Git',            // must be one of the categories in the same file
+  summary: 'Move HEAD back one commit and keep your changes staged.',
+  snippet: 'git reset --soft HEAD~1',
+  tags: ['undo', 'commit'],
+}
+```
+
+Titles must be unique, and the tests check that every item has a valid category, a snippet, a summary and at least one tag. To add a category, add it to the `categories` array first.
+
+## Deploying
+
+The build is static. To host it under a sub-path, set `BASE_PATH` when building, for example for GitHub Pages:
 
 ```bash
-npm run dev
+BASE_PATH=/ArrinPaul/ npm run build
 ```
 
-### Build for production
+Then publish the contents of `dist/`. There is no deploy workflow in this repository yet.
 
-```bash
-npm run build
+## Project structure
+
+```text
+open-dev-atlas/
+├── src/
+│   ├── App.tsx          UI: search, filters, cards, copy buttons
+│   ├── data.ts          Categories and cheat sheet content
+│   ├── filter.ts        Search and category filtering
+│   ├── clipboard.ts     Copy to clipboard with a fallback
+│   ├── *.test.ts(x)     Tests
+│   └── styles.css
+├── index.html
+├── vite.config.ts
+└── tsconfig*.json
 ```
 
-### Preview the production build
+## Contributing
 
-```bash
-npm run preview
-```
+1. Fork the repository and create a branch.
+2. Make your change, and run `npm run typecheck`, `npm test` and `npm run build`.
+3. Open a pull request describing what changed and why.
 
-## How to Customize
-
-1. Edit `src/data.ts` to add new cheat sheets, commands, or workflow recipes.
-2. Update `src/App.tsx` if you want to change layout, grouping, or card behavior.
-3. Adjust `src/styles.css` to match your brand, color palette, and typography.
-4. Replace the placeholder badges above with your real GitHub repository URL.
-
-## How to Contribute
-
-Contributions are welcome and encouraged.
-
-1. Fork the repository.
-2. Create a feature branch from `main`.
-3. Make your changes with clear commit messages.
-4. Open a pull request with a short description of what changed and why.
-
-Good first issues are a great fit for:
-
-- Adding new categories or cheat-sheet items.
-- Improving accessibility, color contrast, or keyboard support.
-- Writing preset packs for specific frameworks or languages.
-- Translating the content into another language.
+Good first contributions: new snippets, new categories, accessibility improvements and translations.
 
 ## Roadmap
 
-- Add favorites and local persistence.
-- Add import/export for custom cheat-sheet packs.
-- Add a command palette for faster navigation.
-- Add a deploy workflow for GitHub Pages.
+- Favorites with local persistence.
+- Import and export of custom cheat-sheet packs.
+- A command palette for faster navigation.
+- A GitHub Pages deploy workflow.
 
 ## License
 
-Choose a license before public release. If you want maximum adoption, MIT is the simplest default.
+Released under the [MIT License](./LICENSE).

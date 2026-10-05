@@ -2,14 +2,14 @@
 <h4 align="center">A Passionate AIML student</h4>
 
 <div align="center">
-<a href="https://www.linkedin.com/in/arrin-paul/" target="_blank">
-<img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 5px;" />
+<a href="https://www.linkedin.com/in/arrin-paul/" target="_blank" rel="noopener noreferrer">
+<img src="https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
 </a>
-<a href="mailto:arrinpaul11@gmail.com" target="_blank">
-<img src=https://img.shields.io/badge/email-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white alt=email style="margin-bottom: 5px;" />
+<a href="mailto:arrinpaul11@gmail.com">
+<img src="https://img.shields.io/badge/email-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
 </a>
-<a href="https://github.com/ArrinPaul" target="_blank">
-<img src=https://komarev.com/ghpvc/?username=ArrinPaul&style=for-the-badge&color=blueviolet&label=GITHUB+VISITORS />
+<a href="https://github.com/ArrinPaul" target="_blank" rel="noopener noreferrer">
+<img src="https://komarev.com/ghpvc/?username=ArrinPaul&style=for-the-badge&color=blueviolet&label=GITHUB+VISITORS" alt="GitHub profile visitors" />
 </a>
 </div>
 
@@ -25,13 +25,11 @@
 ## View GitHub Stats
 
 <div align="center">
- <img src="https://github-readme-stats-fast.vercel.app/api?username=ArrinPaul&show_icons=true&theme=dark&card_width=700&card_height=200&cache_id=1791219730">
+ <img src="https://github-readme-stats-fast.vercel.app/api?username=ArrinPaul&show_icons=true&theme=dark&card_width=700&card_height=200&cache_id=1791219730" alt="GitHub stats" />
  <br>
  <img src="https://streak-stats.demolab.com?user=ArrinPaul&theme=dark&card_width=700&card_height=200&cache_id=1791219730" alt="GitHub Streak" />
  <br>
- <img src="https://github-readme-activity-graph.vercel.app/graph?username=ArrinPaul&radius=16&theme=github-dark&area=true&order=5" alt="GitHub Activity Graph" />
- <br>
- <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=ArrinPaul&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact&cache_id=1791219730">
+ <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=ArrinPaul&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact&cache_id=1791219730" alt="Most used languages" />
 </div>
 
 ## Tools and Frameworks
@@ -93,14 +91,14 @@ HTML                     1 repo              █░░░░░░░░░░�
 ## Quote of the Session
 
 <div align="center">
-	<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark"/>
+	<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark" alt="Random programming quote" />
 </div>
 
 ## Turn Up Beats
 
 <p align="center">
   <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=jxo82k64bq41srx1w9jg30wy2&redirect=true">
-    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=jxo82k64bq41srx1w9jg30wy2&cover_image=true&theme=spotify-embed&show_offline=true&background_color=121212&interchange=false&profanity=false&mode=dark&bar_color=53b14f&bar_color_cover=false">
+    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=jxo82k64bq41srx1w9jg30wy2&cover_image=true&theme=spotify-embed&show_offline=true&background_color=121212&interchange=false&profanity=false&mode=dark&bar_color=53b14f&bar_color_cover=false" alt="Currently playing on Spotify" />
   </a>
 </p>
 

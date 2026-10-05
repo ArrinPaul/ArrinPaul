@@ -1,7 +1,7 @@
 name: Generate Pacman Animation
 
 on:
-  schedule: # execute every 32 hours
+  schedule: # Six runs a week: Sun/Thu 00:00, Mon/Fri 08:00, Tue/Sat 16:00 UTC (none on Wednesday)
     - cron: "0 0 * * 0,4"
     - cron: "0 8 * * 1,5"
     - cron: "0 16 * * 2,6"
@@ -10,8 +10,13 @@ on:
 
   push:
     branches:
-    - main
-    - master
+      - main
+    paths-ignore:
+      - 'open-dev-atlas/**'
+
+concurrency:
+  group: pacman-graph
+  cancel-in-progress: true
 
 jobs:
   generate:
@@ -23,16 +28,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Increase Node.js memory limit
-        run: export NODE_OPTIONS="--max-old-space-size=4096"
-        
+      # Third-party actions are pinned to a commit so a change upstream cannot run in this repo unreviewed.
       - name: generate pacman-contribution-graph.svg
-        uses: abozanona/pacman-contribution-graph@main
+        uses: abozanona/pacman-contribution-graph@7332e1de7903ab780c3692a4127a59cc13872daa # main
+        env:
+          NODE_OPTIONS: --max-old-space-size=4096
         with:
           github_user_name: ${{ github.repository_owner }}
 
       - name: push pacman-contribution-graph.svg to the output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
+        uses: crazy-max/ghaction-github-pages@c0d7ff0487ee0415efb7f32dab10ea880330b1dd # v3.1.0
         with:
           target_branch: output
           build_dir: dist

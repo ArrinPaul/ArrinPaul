@@ -1,15 +1,21 @@
 name: Update GitHub Stats Cache
 
 on:
-  schedule: # Run every 32 hours
+  schedule: # Six runs a week: Sun/Thu 00:00, Mon/Fri 08:00, Tue/Sat 16:00 UTC (none on Wednesday)
     - cron: '0 0 * * 0,4'
     - cron: '0 8 * * 1,5'
     - cron: '0 16 * * 2,6'
   workflow_dispatch:
 
+# Share one queue with the WakaTime workflow: both commit to README.md.
+concurrency:
+  group: readme-updates
+  cancel-in-progress: false
+
 jobs:
   update-readme:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     permissions:
       contents: write
 
@@ -18,15 +24,21 @@ jobs:
 
       - name: Update cache ID in GitHub Stats
         run: |
-          # Get current timestamp to use as cache buster
+          # Use the current timestamp as a cache buster for the stats images
           TIMESTAMP=$(date +%s)
-          
+
           sed -i "s/\(&\?\)cache_id=[0-9]*/\1cache_id=$TIMESTAMP/g" README.md
-          
+
       - name: Commit changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add README.md
-          git diff-index --quiet HEAD || git commit -m "Updated GitHub Stats cache"
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "Updated GitHub Stats cache"
+          # Another workflow may have pushed since checkout, so rebase before pushing
+          git pull --rebase origin "${GITHUB_REF_NAME}"
           git push
