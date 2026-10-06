@@ -28,6 +28,21 @@ if (!TOKEN) {
 }
 
 async function api(path) {
+  // Retry temporary failures (network errors, 5xx, rate limiting) a few times before giving up.
+  let lastError;
+  for (let attempt = 1; attempt <= 4; attempt++) {
+    try {
+      return await apiOnce(path);
+    } catch (e) {
+      lastError = e;
+      if (!/GitHub API (5dd|429|403)|fetch failed/.test(String(e.message))) throw e;
+      await new Promise((r) => setTimeout(r, attempt * 2000));
+    }
+  }
+  throw lastError;
+}
+
+async function apiOnce(path) {
   const res = await fetch(`https://api.github.com${path}`, {
     headers: {
       Authorization: `Bearer ${TOKEN}`,

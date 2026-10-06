@@ -8,9 +8,7 @@
 <a href="mailto:arrinpaul11@gmail.com">
 <img src="https://img.shields.io/badge/email-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
 </a>
-<a href="https://github.com/ArrinPaul" target="_blank" rel="noopener noreferrer">
-<img src="https://komarev.com/ghpvc/?username=ArrinPaul&style=for-the-badge&color=blueviolet&label=GITHUB+VISITORS" alt="GitHub profile visitors" />
-</a>
+<img src="https://komarev.com/ghpvc/?username=ArrinPaul&style=for-the-badge&color=blueviolet&label=PROFILE+VIEWS" alt="Profile views" />
 </div>
 
 ## See My Works
@@ -25,14 +23,19 @@
 ## View GitHub Stats
 
 <div align="center">
- <img src="https://github-readme-stats-fast.vercel.app/api?username=ArrinPaul&show_icons=true&theme=dark&card_width=700&card_height=200&cache_id=1791219730" alt="GitHub stats" />
- <br>
- <img src="https://streak-stats.demolab.com?user=ArrinPaul&theme=dark&card_width=700&card_height=200&cache_id=1791219730" alt="GitHub Streak" />
- <br>
- <img src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=ArrinPaul&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact&cache_id=1791219730" alt="Most used languages" />
+  <img src="./assets/cards/stats.svg" alt="GitHub stats" />
+  <img src="./assets/cards/streak.svg" alt="Contribution streak" />
+  <br>
+  <img src="./assets/cards/languages.svg" alt="Most used languages" />
 </div>
 
-<sub>The cards above count different things: the stats card counts commits from the past year, the streak card counts every contribution (commits, pull requests, issues, reviews, including private ones) since the account's first contribution, and the coding-activity block below counts all commits ever made to my own repositories.</sub>
+<sub>These cards are generated from GitHub's own data every day by a workflow in this repository, so they do not depend on outside image servers. They count different things: the stats card covers the past 12 months, the streak card every contribution since the account started, and the coding-activity block below all commits ever made to my own repositories.</sub>
+
+## Contribution Activity
+
+<div align="center">
+  <img src="./assets/cards/activity.svg" alt="Daily contributions over the last 30 days" />
+</div>
 
 ## Tools and Frameworks
 
@@ -99,10 +102,10 @@ Java                     1 repo              █░░░░░░░░░░�
 <sub>Based on 1939 commits across 26 public and private repositories (own repos, no forks). Each commit is counted once, even if it is on several branches. Times are in Asia/Kolkata.</sub>
 <!--END_SECTION:activity-->
 
-## Quote of the Session
+## Quote of the Day
 
 <div align="center">
-	<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark" alt="Random programming quote" />
+  <img src="./assets/cards/quote.svg" alt="Quote of the day" />
 </div>
 
 ## Turn Up Beats

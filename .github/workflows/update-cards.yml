@@ -1,0 +1,50 @@
+name: Update profile cards
+
+on:
+  schedule: # Every day at 18:30 UTC (00:00 in India)
+    - cron: '30 18 * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'scripts/generate-cards.mjs'
+
+# Share one queue with the activity workflow: both commit to this repository.
+concurrency:
+  group: readme-updates
+  cancel-in-progress: false
+
+jobs:
+  update-cards:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # Needs a token that can read private repositories (the GH_TOKEN secret). The script retries API
+      # calls, and if anything still fails it exits before writing, so the previous cards stay in place.
+      - name: Generate the cards
+        run: node scripts/generate-cards.mjs
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          REQUIRE_PRIVATE: 'true'
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add assets/cards
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "Updated profile cards"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push

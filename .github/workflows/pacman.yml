@@ -36,7 +36,19 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
 
+      # GitHub occasionally answers a push with a temporary 500 error. Try once more before giving up.
       - name: push pacman-contribution-graph.svg to the output branch
+        id: push
+        continue-on-error: true
+        uses: crazy-max/ghaction-github-pages@c0d7ff0487ee0415efb7f32dab10ea880330b1dd # v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: retry the push once
+        if: steps.push.outcome == 'failure'
         uses: crazy-max/ghaction-github-pages@c0d7ff0487ee0415efb7f32dab10ea880330b1dd # v3.1.0
         with:
           target_branch: output
