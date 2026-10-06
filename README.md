@@ -47,24 +47,24 @@
 ## See Coding Activity
 
 <!--START_SECTION:activity-->
-**I'm a Daytime Coder ☀️**
+**I'm a Daytime Coder**
 
 ```text
-🌞 Morning               272 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.83 % 
-🌆 Daytime               738 commits         █████████░░░░░░░░░░░░░░░░   37.52 % 
-🌃 Evening               540 commits         ███████░░░░░░░░░░░░░░░░░░   27.45 % 
-🌙 Night                 417 commits         █████░░░░░░░░░░░░░░░░░░░░   21.20 % 
+Morning                  272 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.81 % 
+Daytime                  741 commits         █████████░░░░░░░░░░░░░░░░   37.61 % 
+Evening                  540 commits         ███████░░░░░░░░░░░░░░░░░░   27.41 % 
+Night                    417 commits         █████░░░░░░░░░░░░░░░░░░░░   21.17 % 
 ```
-📅 **I'm Most Productive on Tuesday**
+**I'm Most Productive on Tuesday**
 
 ```text
-Monday                   321 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.32 % 
-Tuesday                  492 commits         ██████░░░░░░░░░░░░░░░░░░░   25.01 % 
-Wednesday                248 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.61 % 
-Thursday                 271 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.78 % 
-Friday                   209 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.63 % 
-Saturday                 248 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.61 % 
-Sunday                   178 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   09.05 % 
+Monday                   321 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.29 % 
+Tuesday                  495 commits         ██████░░░░░░░░░░░░░░░░░░░   25.13 % 
+Wednesday                248 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.59 % 
+Thursday                 271 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.76 % 
+Friday                   209 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.61 % 
+Saturday                 248 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.59 % 
+Sunday                   178 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   09.04 % 
 ```
 
 **I Mostly Code in TypeScript**
@@ -76,7 +76,7 @@ JavaScript               3 repos             ███░░░░░░░░�
 Java                     1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   03.85 % 
 ```
 
-<sub>Based on 1967 commits across 26 public and private repositories (own repos, no forks). Each commit is counted once, even if it is on several branches. Times are in Asia/Kolkata.</sub>
+<sub>Based on 1970 commits across 26 public and private repositories (own repos, no forks). Each commit is counted once, even if it is on several branches. Times are in Asia/Kolkata.</sub>
 <!--END_SECTION:activity-->
 
 ## Quote of the Day
