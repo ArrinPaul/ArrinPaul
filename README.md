@@ -1,5 +1,5 @@
 <h1 align="center">Hi, I'm Arrin Paul</h1>
-<h4 align="center">A Passionate AIML student</h4>
+<h4 align="center">AIML student building AI-powered web apps and data platforms</h4>
 
 <div align="center">
 <a href="https://www.linkedin.com/in/arrin-paul/" target="_blank" rel="noopener noreferrer">
@@ -7,6 +7,9 @@
 </a>
 <a href="mailto:arrinpaul11@gmail.com">
 <img src="https://img.shields.io/badge/email-%23D14836.svg?&style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+</a>
+<a href="https://drive.google.com/file/d/12KhZDhc-D0kdnlsPQUXKVdZdNzJPhUkW/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+<img src="https://img.shields.io/badge/resume-%234285F4.svg?&style=for-the-badge&logo=googledrive&logoColor=white" alt="Resume" />
 </a>
 <img src="https://komarev.com/ghpvc/?username=ArrinPaul&style=for-the-badge&color=blueviolet&label=PROFILE+VIEWS" alt="Profile views" />
 </div>
@@ -18,25 +21,6 @@
 - **Building:** AI-powered web apps and data platforms in TypeScript and Python, from event tooling to traffic intelligence
 - **Open to:** collaborating on ML and TypeScript projects
 - **Based in:** India
-- **Reach me:** [Email](mailto:arrinpaul11@gmail.com) · [LinkedIn](https://www.linkedin.com/in/arrin-paul/) · [Resume](https://drive.google.com/file/d/12KhZDhc-D0kdnlsPQUXKVdZdNzJPhUkW/view?usp=sharing)
-
-## View GitHub Stats
-
-<div align="center">
-  <img src="./assets/cards/stats.svg" alt="GitHub stats" />
-  <img src="./assets/cards/streak.svg" alt="Contribution streak" />
-  <br>
-  <img src="./assets/cards/languages.svg" alt="Most used languages" />
-</div>
-
-
-## Contribution Activity
-
-<div align="center">
-  <img src="./assets/cards/heatmap.svg" alt="Contribution heatmap for the last 12 months" />
-  <br>
-  <img src="./assets/cards/activity.svg" alt="Daily contributions over the last 30 days" />
-</div>
 
 ## Tools and Frameworks
 
@@ -44,7 +28,25 @@
   <img src="./assets/cards/tools.svg" alt="Tools and frameworks: Python, TypeScript, JavaScript, Java, C, React, Next.js, Angular, Node.js, FastAPI, Spring Boot, PostgreSQL, MongoDB, Supabase, PyTorch, TensorFlow, OpenCV, Docker and more" />
 </div>
 
-## See Coding Activity
+## GitHub at a Glance
+
+<div align="center">
+  <img src="./assets/cards/stats.svg" width="49%" alt="GitHub stats" />
+  <img src="./assets/cards/streak.svg" width="49%" alt="Contribution streak" />
+  <br>
+  <img src="./assets/cards/languages.svg" width="49%" alt="Most used languages" />
+  <img src="./assets/cards/recent.svg" width="49%" alt="Latest work: most recently updated public repositories" />
+  <br>
+  <img src="./assets/cards/heatmap.svg" width="98%" alt="Contribution heatmap for the last 12 months" />
+</div>
+
+<details>
+<summary><b>More activity: last 30 days and coding habits</b></summary>
+<br>
+
+<div align="center">
+  <img src="./assets/cards/activity.svg" width="98%" alt="Daily contributions over the last 30 days" />
+</div>
 
 <!--START_SECTION:activity-->
 **I'm a Daytime Coder**
@@ -78,14 +80,10 @@ Java                     1 repo              █░░░░░░░░░░�
 
 <!--END_SECTION:activity-->
 
-## Quote of the Day
-
-<div align="center">
-  <img src="./assets/cards/quote.svg" alt="Quote of the day" />
-</div>
-
-## Sizzling The Feed
+</details>
 
 <div align="center">
   <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/ArrinPaul/ArrinPaul/output/pacman-contribution-graph-dark.svg" />
+  <br>
+  <img src="./assets/cards/quote.svg" width="98%" alt="Quote of the day" />
 </div>

@@ -15,6 +15,7 @@ import path from 'node:path';
 
 const TOKEN = process.env.GH_TOKEN || process.env.GITHUB_TOKEN;
 const OUT = process.env.CARDS_DIR || 'assets/cards';
+const OWNER_LOGIN = (process.env.GITHUB_REPOSITORY_OWNER || 'ArrinPaul').toLowerCase(); // the profile repo is skipped in "Latest work"
 const DRY_RUN = process.argv.includes('--dry-run');
 // In automation, refuse to publish numbers that cannot see private contributions.
 const REQUIRE_PRIVATE = process.env.REQUIRE_PRIVATE === 'true';
@@ -123,8 +124,17 @@ async function loadData() {
     for (const w of d.viewer.contributionsCollection.contributionCalendar.weeks)
       for (const day of w.contributionDays) days.set(day.date, day.contributionCount);
   }
+  // Most recently pushed PUBLIC repositories only, so private project names never appear on the profile.
+  const recentData = await gql(`query {
+    viewer {
+      repositories(ownerAffiliations: OWNER, isFork: false, privacy: PUBLIC, first: 12, orderBy: {field: PUSHED_AT, direction: DESC}) {
+        nodes { name description pushedAt primaryLanguage { name color } }
+      }
+    }
+  }`);
+  const recent = recentData.viewer.repositories.nodes.filter((r) => r.name.toLowerCase() !== OWNER_LOGIN).slice(0, 4);
   const calendar = v.contributionsCollection.contributionCalendar;
-  return { v, repos, days, yearTotal: calendar.totalContributions, weeks: calendar.weeks };
+  return { v, repos, recent, days, yearTotal: calendar.totalContributions, weeks: calendar.weeks };
 }
 
 function streaks(days) {
@@ -194,7 +204,7 @@ function streakCard({ days, yearTotal }) {
     `<circle cx="247" cy="86" r="${R}" fill="none" stroke="${C.grid}" stroke-width="5"/><circle cx="247" cy="86" r="${R}" fill="none" stroke="#f0883e" stroke-width="5" stroke-linecap="round" stroke-dasharray="${(circ * frac).toFixed(1)} ${circ.toFixed(1)}" transform="rotate(-90 247 86)"/>`,
     `<text x="247" y="96" class="big" text-anchor="middle">${s.current.len}</text><text x="247" y="136" class="l" text-anchor="middle">Current streak (days)</text><text x="247" y="155" class="m" text-anchor="middle">${esc(range(s.current))}</text>`,
     `<line x1="330" y1="62" x2="330" y2="156" stroke="${C.grid}"/>`,
-    col(412, `${s.longest.len}`, 'Longest streak (days)', range(s.longest)),
+    col(412, `${s.longest.len}`, 'Longest streak (days)', range(s.longest)),
   ];
   return frame(495, 180, 'Contribution streak', body.join('\n'), `${yearTotal} contributions in the last 12 months, current streak ${s.current.len} days, longest streak ${s.longest.len} days.`);
 }
@@ -221,10 +231,28 @@ function languagesCard({ repos }) {
   body.push('</g>');
   top.forEach(([name, size], i) => {
     const col = i % 2, row = Math.floor(i / 2);
-    const px = 24 + col * 240, py = 90 + row * 26;
+    const px = 24 + col * 240, py = 98 + row * 28;
     body.push(`<circle cx="${px + 5}" cy="${py - 4}" r="5" fill="${colors.get(name)}"/><text x="${px + 18}" y="${py}" class="l">${esc(name)}</text><text x="${px + 215}" y="${py}" class="v" text-anchor="end">${((size / total) * 100).toFixed(1)}%</text>`);
   });
-  return frame(495, 160, 'Most used languages', body.join('\n'), `Top languages: ${top.map(([n]) => n).join(', ')}.`);
+  return frame(495, 180, 'Most used languages', body.join('\n'), `Top languages: ${top.map(([n]) => n).join(', ')}.`);
+}
+
+function recentCard({ recent }) {
+  const today = new Date();
+  const ago = (iso) => {
+    const days = Math.floor((today - new Date(iso)) / 86400000);
+    return days <= 0 ? 'today' : days === 1 ? 'yesterday' : `${days} days ago`;
+  };
+  const clip = (s, n) => (s.length > n ? `${s.slice(0, n - 1).trimEnd()}...` : s);
+  const body = [`<text x="24" y="34" class="h">Latest work</text>`];
+  recent.forEach((r, i) => {
+    const y = 64 + i * 32;
+    const lang = r.primaryLanguage;
+    if (lang) body.push(`<circle cx="30" cy="${y - 4}" r="4" fill="${lang.color || C.muted}"/>`);
+    body.push(`<text x="42" y="${y}" class="v">${esc(r.name)}</text><text x="471" y="${y}" class="m" text-anchor="end">${esc(ago(r.pushedAt))}</text>`);
+    if (r.description) body.push(`<text x="42" y="${y + 14}" class="m">${esc(clip(r.description, 72))}</text>`);
+  });
+  return frame(495, 180, 'Latest work', body.join('\n'), `Most recently updated public repositories: ${recent.map((r) => r.name).join(', ')}.`);
 }
 
 function activityCard({ days }) {
@@ -306,6 +334,7 @@ async function main() {
     'stats.svg': statsCard(data),
     'streak.svg': streakCard(data),
     'languages.svg': languagesCard(data),
+    'recent.svg': recentCard(data),
     'activity.svg': activityCard(data),
     'heatmap.svg': heatmapCard(data),
     'quote.svg': quoteCard().svg,
