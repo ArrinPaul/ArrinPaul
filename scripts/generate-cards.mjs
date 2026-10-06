@@ -177,8 +177,7 @@ function statsCard({ v, repos }) {
     const x = 24 + col * 240, y = 66 + row * 30;
     body.push(`<text x="${x}" y="${y}" class="l">${esc(label)}</text><text x="${x + 215}" y="${y}" class="v" text-anchor="end">${fmt(val)}</text>`);
   });
-  const priv = cc.restrictedContributionsCount;
-  body.push(`<text x="24" y="196" class="m">Includes ${fmt(priv)} private contributions in the last 12 months. Updated ${new Date().toISOString().slice(0, 10)}.</text>`);
+  body.push(`<text x="24" y="196" class="m">Private repositories are included. Updated ${new Date().toISOString().slice(0, 10)}.</text>`);
   return frame(495, 215, 'GitHub stats', body.join('\n'), 'Totals from GitHub: contributions, commits, pull requests, reviews, issues, stars, repositories and followers.');
 }
 
