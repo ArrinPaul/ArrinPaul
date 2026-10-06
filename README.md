@@ -11,14 +11,13 @@
 <img src="https://komarev.com/ghpvc/?username=ArrinPaul&style=for-the-badge&color=blueviolet&label=PROFILE+VIEWS" alt="Profile views" />
 </div>
 
-## See My Works
+## About Me
 
-- My projects and code are on GitHub.
-- I'm based in India.
-- You can contact me at **arrinpaul11@gmail.com**
-- Resume/CV: [View Resume](https://drive.google.com/file/d/12KhZDhc-D0kdnlsPQUXKVdZdNzJPhUkW/view?usp=sharing)
-- I'm currently learning about [AI Agents](https://www.ibm.com/think/topics/ai-agents) and Machine Learning.
-- I'm open to collaborating on ML and TypeScript projects.
+- 🎓 **Studying:** AI and machine learning. Right now I'm learning about [AI agents](https://www.ibm.com/think/topics/ai-agents).
+- 🚀 **Shipped:** [Eventra](https://github.com/ArrinPaul/Eventra) (events and ticketing, [live](https://eventra-eight-sable.vercel.app)), [HealthNex](https://github.com/ArrinPaul/HealthNex) (health surveillance, [live](https://health-nex-one.vercel.app/)), [Earth Insights](https://github.com/ArrinPaul/LandSat) (satellite analytics) and [Campus Connect](https://github.com/ArrinPaul/Campus-Connect) (a social platform for students).
+- 🔨 **Building:** AI-powered web apps and data platforms in TypeScript and Python, from event tooling to traffic intelligence.
+- 🤝 **Open to:** collaborating on ML and TypeScript projects.
+- 📫 **Reach me:** [arrinpaul11@gmail.com](mailto:arrinpaul11@gmail.com) · [LinkedIn](https://www.linkedin.com/in/arrin-paul/) · [Resume](https://drive.google.com/file/d/12KhZDhc-D0kdnlsPQUXKVdZdNzJPhUkW/view?usp=sharing) · based in India.
 
 ## View GitHub Stats
 
@@ -29,7 +28,6 @@
   <img src="./assets/cards/languages.svg" alt="Most used languages" />
 </div>
 
-<sub>These cards are generated from GitHub's own data every day by a workflow in this repository, so they do not depend on outside image servers. They count different things: the stats card covers the past 12 months, the streak card every contribution since the account started, and the coding-activity block below all commits ever made to my own repositories.</sub>
 
 ## Contribution Activity
 
@@ -40,31 +38,7 @@
 ## Tools and Frameworks
 
 <div align="center">
-
-**Languages**<br/>
-  <img src="https://skillicons.dev/icons?i=c,java,py,ts,js,html,css,latex,bash&perline=14" alt="" />
-
-**Frontend**<br/>
-  <img src="https://skillicons.dev/icons?i=react,nextjs,angular,vite,tailwind,threejs&perline=14" alt="" />
-
-**Backend**<br/>
-  <img src="https://skillicons.dev/icons?i=nodejs,express,nestjs,fastapi,spring&perline=14" alt="" />
-
-**Databases and data services**<br/>
-  <img src="https://skillicons.dev/icons?i=postgres,mongodb,redis,supabase,firebase&perline=14" alt="" /><br/>
-<img src="https://img.shields.io/badge/Convex-F3B01C?style=flat-square&logo=convex&logoColor=white" alt="Convex" /> <img src="https://img.shields.io/badge/Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white" alt="Neo4j" /> <img src="https://img.shields.io/badge/pgvector-336791?style=flat-square&logo=postgresql&logoColor=white" alt="pgvector" /> <img src="https://img.shields.io/badge/Drizzle%20ORM-C5F74F?style=flat-square&logo=drizzle&logoColor=white" alt="Drizzle ORM" />
-
-**AI and machine learning**<br/>
-  <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,opencv,sklearn&perline=14" alt="" /><br/>
-<img src="https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white" alt="NumPy" /> <img src="https://img.shields.io/badge/pandas-150458?style=flat-square&logo=pandas&logoColor=white" alt="pandas" /> <img src="https://img.shields.io/badge/MediaPipe-0097A7?style=flat-square&logo=mediapipe&logoColor=white" alt="MediaPipe" /> <img src="https://img.shields.io/badge/Gemini%20API-4285F4?style=flat-square&logo=googlegemini&logoColor=white" alt="Gemini API" /> <img src="https://img.shields.io/badge/Genkit-FFCA28?style=flat-square&logo=firebase&logoColor=white" alt="Genkit" />
-
-**Auth, payments and realtime**<br/>
-<img src="https://img.shields.io/badge/Clerk-6C47FF?style=flat-square&logo=clerk&logoColor=white" alt="Clerk" /> <img src="https://img.shields.io/badge/Stripe-635BFF?style=flat-square&logo=stripe&logoColor=white" alt="Stripe" /> <img src="https://img.shields.io/badge/Socket.IO-010101?style=flat-square&logo=socketdotio&logoColor=white" alt="Socket.IO" /> <img src="https://img.shields.io/badge/BullMQ-E0234E?style=flat-square" alt="BullMQ" /> <img src="https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white" alt="n8n" />
-
-**DevOps, testing and tooling**<br/>
-  <img src="https://skillicons.dev/icons?i=docker,githubactions,vercel,nginx,aws,git,github,vscode,npm,pnpm,jest,vitest,postman&perline=14" alt="" /><br/>
-<img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square" alt="Playwright" /> <img src="https://img.shields.io/badge/Zod-3E67B1?style=flat-square&logo=zod&logoColor=white" alt="Zod" /> <img src="https://img.shields.io/badge/Turborepo-EF4444?style=flat-square" alt="Turborepo" />
-
+  <img src="./assets/cards/tools.svg" alt="Tools and frameworks: Python, TypeScript, JavaScript, Java, C, React, Next.js, Angular, Node.js, FastAPI, Spring Boot, PostgreSQL, MongoDB, Supabase, PyTorch, TensorFlow, OpenCV, Docker and more" />
 </div>
 
 ## See Coding Activity
@@ -107,14 +81,6 @@ Java                     1 repo              █░░░░░░░░░░�
 <div align="center">
   <img src="./assets/cards/quote.svg" alt="Quote of the day" />
 </div>
-
-## Turn Up Beats
-
-<p align="center">
-  <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=jxo82k64bq41srx1w9jg30wy2&redirect=true">
-    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=jxo82k64bq41srx1w9jg30wy2&cover_image=true&theme=spotify-embed&show_offline=true&background_color=121212&interchange=false&profanity=false&mode=dark&bar_color=53b14f&bar_color_cover=false" alt="Currently playing on Spotify" />
-  </a>
-</p>
 
 ## Sizzling The Feed
 

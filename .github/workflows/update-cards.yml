@@ -9,6 +9,7 @@ on:
       - main
     paths:
       - 'scripts/generate-cards.mjs'
+      - 'scripts/generate-tools.mjs'
 
 # Share one queue with the activity workflow: both commit to this repository.
 concurrency:
@@ -35,6 +36,9 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           REQUIRE_PRIVATE: 'true'
+
+      - name: Generate the tools wall
+        run: node scripts/generate-tools.mjs
 
       - name: Commit changes
         run: |
