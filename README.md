@@ -50,21 +50,21 @@
 **I'm a Daytime Coder**
 
 ```text
-Morning                  272 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.81 % 
-Daytime                  741 commits         █████████░░░░░░░░░░░░░░░░   37.61 % 
-Evening                  540 commits         ███████░░░░░░░░░░░░░░░░░░   27.41 % 
-Night                    417 commits         █████░░░░░░░░░░░░░░░░░░░░   21.17 % 
+Morning                  272 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.79 % 
+Daytime                  743 commits         █████████░░░░░░░░░░░░░░░░   37.68 % 
+Evening                  540 commits         ███████░░░░░░░░░░░░░░░░░░   27.38 % 
+Night                    417 commits         █████░░░░░░░░░░░░░░░░░░░░   21.15 % 
 ```
 **I'm Most Productive on Tuesday**
 
 ```text
-Monday                   321 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.29 % 
-Tuesday                  495 commits         ██████░░░░░░░░░░░░░░░░░░░   25.13 % 
-Wednesday                248 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.59 % 
-Thursday                 271 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.76 % 
-Friday                   209 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.61 % 
-Saturday                 248 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.59 % 
-Sunday                   178 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   09.04 % 
+Monday                   321 commits         ████░░░░░░░░░░░░░░░░░░░░░   16.28 % 
+Tuesday                  497 commits         ██████░░░░░░░░░░░░░░░░░░░   25.20 % 
+Wednesday                248 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.58 % 
+Thursday                 271 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.74 % 
+Friday                   209 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.60 % 
+Saturday                 248 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.58 % 
+Sunday                   178 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   09.03 % 
 ```
 
 **I Mostly Code in TypeScript**
@@ -76,7 +76,6 @@ JavaScript               3 repos             ███░░░░░░░░�
 Java                     1 repo              █░░░░░░░░░░░░░░░░░░░░░░░░   03.85 % 
 ```
 
-<sub>Based on 1970 commits across 26 public and private repositories (own repos, no forks). Each commit is counted once, even if it is on several branches. Times are in Asia/Kolkata.</sub>
 <!--END_SECTION:activity-->
 
 ## Quote of the Day
