@@ -72,7 +72,10 @@ const dayLabel = (iso) => new Date(`${iso}T00:00:00Z`).toLocaleDateString('en-US
 function frame(w, h, title, body, desc) {
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-labelledby="t d">
 <title id="t">${esc(title)}</title><desc id="d">${esc(desc)}</desc>
-<rect x="0.5" y="0.5" rx="8" width="${w - 1}" height="${h - 1}" fill="${C.bg}" stroke="${C.border}"/>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d1117"/><stop offset="1" stop-color="#101826"/></linearGradient>
+<linearGradient id="bar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#58a6ff"/><stop offset="0.5" stop-color="#a371f7"/><stop offset="1" stop-color="#3fb950"/></linearGradient></defs>
+<rect x="0.5" y="0.5" rx="8" width="${w - 1}" height="${h - 1}" fill="url(#bg)" stroke="${C.border}"/>
+<rect x="1" y="1" rx="1.5" width="${w - 2}" height="3" fill="url(#bar)" opacity=".85"/>
 <style>text{font-family:${FONT}}.h{font-size:16px;font-weight:600;fill:${C.title}}.l{font-size:13px;fill:${C.text}}.v{font-size:13px;font-weight:600;fill:${C.text}}.m{font-size:11px;fill:${C.muted}}.big{font-size:28px;font-weight:700;fill:${C.text}}</style>
 ${body}
 </svg>
@@ -119,7 +122,8 @@ async function loadData() {
     for (const w of d.viewer.contributionsCollection.contributionCalendar.weeks)
       for (const day of w.contributionDays) days.set(day.date, day.contributionCount);
   }
-  return { v, repos, days };
+  const calendar = v.contributionsCollection.contributionCalendar;
+  return { v, repos, days, yearTotal: calendar.totalContributions, weeks: calendar.weeks };
 }
 
 function streaks(days) {
@@ -178,21 +182,23 @@ function statsCard({ v, repos }) {
   return frame(495, 215, 'GitHub stats', body.join('\n'), 'Totals from GitHub: contributions, commits, pull requests, reviews, issues, stars, repositories and followers.');
 }
 
-function streakCard({ days }) {
+function streakCard({ days, yearTotal }) {
   const s = streaks(days);
   const range = (r) => (r.len ? `${dayLabel(r.from)} - ${dayLabel(r.to)}` : 'No active streak');
   const col = (x, big, label, sub) =>
-    `<text x="${x}" y="88" class="big" text-anchor="middle">${esc(big)}</text><text x="${x}" y="116" class="l" text-anchor="middle">${esc(label)}</text><text x="${x}" y="136" class="m" text-anchor="middle">${esc(sub)}</text>`;
+    `<text x="${x}" y="96" class="big" text-anchor="middle">${esc(big)}</text><text x="${x}" y="124" class="l" text-anchor="middle">${esc(label)}</text><text x="${x}" y="143" class="m" text-anchor="middle">${esc(sub)}</text>`;
+  const R = 34, circ = 2 * Math.PI * R, frac = s.longest.len ? Math.min(1, s.current.len / s.longest.len) : 0;
   const body = [
     `<text x="24" y="34" class="h">Contribution streak</text>`,
-    col(90, fmt(s.total), 'Total contributions', `since ${dayLabel(s.since)} ${s.since.slice(0, 4)}`),
-    `<line x1="165" y1="60" x2="165" y2="150" stroke="${C.grid}"/>`,
-    col(247, `${s.current.len}`, `Current streak (days)`, range(s.current)),
-    `<line x1="330" y1="60" x2="330" y2="150" stroke="${C.grid}"/>`,
-    col(412, `${s.longest.len}`, `Longest streak (days)`, range(s.longest)),
-    `<text x="24" y="184" class="m">Private contributions included. An empty day today does not break the streak yet.</text>`,
+    col(90, fmt(yearTotal), 'Contributions, last 12 months', `${fmt(s.total)} since ${dayLabel(s.since)} ${s.since.slice(0, 4)}`),
+    `<line x1="170" y1="62" x2="170" y2="156" stroke="${C.grid}"/>`,
+    `<circle cx="247" cy="86" r="${R}" fill="none" stroke="${C.grid}" stroke-width="5"/><circle cx="247" cy="86" r="${R}" fill="none" stroke="#f0883e" stroke-width="5" stroke-linecap="round" stroke-dasharray="${(circ * frac).toFixed(1)} ${circ.toFixed(1)}" transform="rotate(-90 247 86)"/>`,
+    `<text x="247" y="96" class="big" text-anchor="middle">${s.current.len}</text><text x="247" y="136" class="l" text-anchor="middle">Current streak (days)</text><text x="247" y="155" class="m" text-anchor="middle">${esc(range(s.current))}</text>`,
+    `<line x1="330" y1="62" x2="330" y2="156" stroke="${C.grid}"/>`,
+    col(412, `${s.longest.len}`, 'Longest streak (days)', range(s.longest)),
+    `<text x="24" y="188" class="m">Private contributions included. An empty day today does not break the streak yet.</text>`,
   ];
-  return frame(495, 200, 'Contribution streak', body.join('\n'), `Total ${s.total} contributions, current streak ${s.current.len} days, longest streak ${s.longest.len} days.`);
+  return frame(495, 205, 'Contribution streak', body.join('\n'), `${yearTotal} contributions in the last 12 months, current streak ${s.current.len} days, longest streak ${s.longest.len} days.`);
 }
 
 function languagesCard({ repos }) {
@@ -246,6 +252,33 @@ function activityCard({ days }) {
   return frame(W, H, 'Contribution activity', body.join('\n'), `Daily contributions between ${dates[0]} and ${dates[dates.length - 1]}.`);
 }
 
+function heatmapCard({ weeks, yearTotal }) {
+  const cell = 11, gap = 3, L = 24, T = 52;
+  const counts = weeks.flatMap((w) => w.contributionDays.map((d) => d.contributionCount)).filter((n) => n > 0).sort((a, b) => a - b);
+  const q = (f) => counts[Math.min(counts.length - 1, Math.floor(counts.length * f))] || 1;
+  const cuts = [q(0.25), q(0.5), q(0.75)];
+  const level = (n) => (n === 0 ? 0 : n <= cuts[0] ? 1 : n <= cuts[1] ? 2 : n <= cuts[2] ? 3 : 4);
+  const shade = ['#161b22', '#0e4429', '#006d32', '#26a641', '#39d353'];
+  const W = L * 2 + weeks.length * (cell + gap) - gap;
+  const H = T + 7 * (cell + gap) + 38;
+  const body = [`<text x="24" y="30" class="h">Contributions, last 12 months</text><text x="${W - 24}" y="30" class="m" text-anchor="end">${fmt(yearTotal)} total</text>`];
+  let lastMonth = -1;
+  weeks.forEach((w, i) => {
+    const x = L + i * (cell + gap);
+    const first = w.contributionDays[0];
+    const m = new Date(first.date + 'T00:00:00Z').getUTCMonth();
+    if (m !== lastMonth && i < weeks.length - 2) { body.push(`<text x="${x}" y="${T - 8}" class="m">${new Date(first.date + 'T00:00:00Z').toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' })}</text>`); lastMonth = m; }
+    w.contributionDays.forEach((d, j) => {
+      body.push(`<rect x="${x}" y="${T + j * (cell + gap)}" width="${cell}" height="${cell}" rx="2" fill="${shade[level(d.contributionCount)]}"><title>${esc(dayLabel(d.date))}: ${d.contributionCount}</title></rect>`);
+    });
+  });
+  const ly = H - 16;
+  body.push(`<text x="${W - 24 - 5 * 14 - 62}" y="${ly + 9}" class="m">Less</text>`);
+  shade.forEach((c2, i) => body.push(`<rect x="${W - 24 - 5 * 14 - 30 + i * 14}" y="${ly}" width="11" height="11" rx="2" fill="${c2}"/>`));
+  body.push(`<text x="${W - 24 - 20}" y="${ly + 9}" class="m">More</text>`);
+  return frame(W, H, 'Contribution heatmap', body.join('\n'), `Heatmap of daily contributions over the last 12 months, ${yearTotal} in total.`);
+}
+
 function wrap(text, max) {
   const lines = [];
   let cur = '';
@@ -277,6 +310,7 @@ async function main() {
     'streak.svg': streakCard(data),
     'languages.svg': languagesCard(data),
     'activity.svg': activityCard(data),
+    'heatmap.svg': heatmapCard(data),
     'quote.svg': quoteCard().svg,
   };
   const s = streaks(data.days);

@@ -1,8 +1,8 @@
 name: Update profile cards
 
 on:
-  schedule: # Every day at 18:30 UTC (00:00 in India)
-    - cron: '30 18 * * *'
+  schedule: # Every hour (at minute 7, since the top of the hour is busy). Commits only when something changed.
+    - cron: '7 * * * *'
   workflow_dispatch:
   push:
     branches:

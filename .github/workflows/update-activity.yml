@@ -1,10 +1,8 @@
 name: Update coding activity
 
 on:
-  schedule: # Six runs a week: Sun/Thu 00:00, Mon/Fri 08:00, Tue/Sat 16:00 UTC (none on Wednesday)
-    - cron: '0 0 * * 0,4'
-    - cron: '0 8 * * 1,5'
-    - cron: '0 16 * * 2,6'
+  schedule: # Every 3 hours
+    - cron: '15 */3 * * *'
   workflow_dispatch:
 
 # Share one queue with the stats-cache workflow: both commit to README.md.

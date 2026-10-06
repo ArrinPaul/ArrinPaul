@@ -32,6 +32,8 @@
 ## Contribution Activity
 
 <div align="center">
+  <img src="./assets/cards/heatmap.svg" alt="Contribution heatmap for the last 12 months" />
+  <br>
   <img src="./assets/cards/activity.svg" alt="Daily contributions over the last 30 days" />
 </div>
 
