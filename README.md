@@ -13,11 +13,12 @@
 
 ## About Me
 
-- 🎓 **Studying:** AI and machine learning. Right now I'm learning about [AI agents](https://www.ibm.com/think/topics/ai-agents).
-- 🚀 **Shipped:** [Eventra](https://github.com/ArrinPaul/Eventra) (events and ticketing, [live](https://eventra-eight-sable.vercel.app)), [HealthNex](https://github.com/ArrinPaul/HealthNex) (health surveillance, [live](https://health-nex-one.vercel.app/)), [Earth Insights](https://github.com/ArrinPaul/LandSat) (satellite analytics) and [Campus Connect](https://github.com/ArrinPaul/Campus-Connect) (a social platform for students).
-- 🔨 **Building:** AI-powered web apps and data platforms in TypeScript and Python, from event tooling to traffic intelligence.
-- 🤝 **Open to:** collaborating on ML and TypeScript projects.
-- 📫 **Reach me:** [arrinpaul11@gmail.com](mailto:arrinpaul11@gmail.com) · [LinkedIn](https://www.linkedin.com/in/arrin-paul/) · [Resume](https://drive.google.com/file/d/12KhZDhc-D0kdnlsPQUXKVdZdNzJPhUkW/view?usp=sharing) · based in India.
+- **Studying:** AI and machine learning, currently [AI agents](https://www.ibm.com/think/topics/ai-agents)
+- **Shipped:** [Eventra](https://github.com/ArrinPaul/Eventra) ([live](https://eventra-eight-sable.vercel.app)), [HealthNex](https://github.com/ArrinPaul/HealthNex) ([live](https://health-nex-one.vercel.app/)), [Earth Insights](https://github.com/ArrinPaul/LandSat) and [Campus Connect](https://github.com/ArrinPaul/Campus-Connect)
+- **Building:** AI-powered web apps and data platforms in TypeScript and Python, from event tooling to traffic intelligence
+- **Open to:** collaborating on ML and TypeScript projects
+- **Based in:** India
+- **Reach me:** [Email](mailto:arrinpaul11@gmail.com) · [LinkedIn](https://www.linkedin.com/in/arrin-paul/) · [Resume](https://drive.google.com/file/d/12KhZDhc-D0kdnlsPQUXKVdZdNzJPhUkW/view?usp=sharing)
 
 ## View GitHub Stats
 

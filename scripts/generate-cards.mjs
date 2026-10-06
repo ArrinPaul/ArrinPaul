@@ -90,6 +90,7 @@ async function loadData() {
       login name createdAt
       followers { totalCount }
       pullRequests { totalCount }
+      mergedPullRequests: pullRequests(states: MERGED) { totalCount }
       issues { totalCount }
       repositories(ownerAffiliations: OWNER, isFork: false, first: 100) {
         totalCount
@@ -168,7 +169,7 @@ function statsCard({ v, repos }) {
     ['Code reviews, last 12 months', cc.totalPullRequestReviewContributions],
     ['Issues, all time', v.issues.totalCount],
     ['Stars earned', stars],
-    ['Repositories', v.repositories.totalCount],
+    ['Pull requests merged', v.mergedPullRequests.totalCount],
     ['Followers', v.followers.totalCount],
   ];
   const body = [`<text x="24" y="34" class="h">GitHub stats: ${esc(v.name || v.login)}</text>`];

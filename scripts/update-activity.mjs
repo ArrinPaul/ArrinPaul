@@ -110,10 +110,10 @@ export function buildBlock({ commits, repoCount, languages, publicOnly }) {
   const total = commits.length;
 
   const slotInfo = {
-    morning: ['🌞 Morning', "I'm an Early Bird 🐤"],
-    daytime: ['🌆 Daytime', "I'm a Daytime Coder ☀️"],
-    evening: ['🌃 Evening', "I'm an Evening Coder 🌇"],
-    night: ['🌙 Night', "I'm a Night Owl 🦉"],
+    morning: ['Morning', "I'm an Early Bird"],
+    daytime: ['Daytime', "I'm a Daytime Coder"],
+    evening: ['Evening', "I'm an Evening Coder"],
+    night: ['Night', "I'm a Night Owl"],
   };
   const topSlot = Object.entries(slots).sort((a, b) => b[1] - a[1])[0][0];
   const topDay = Object.entries(days).sort((a, b) => b[1] - a[1])[0][0];
@@ -123,7 +123,7 @@ export function buildBlock({ commits, repoCount, languages, publicOnly }) {
   const out = [];
   out.push(`**${slotInfo[topSlot][1]}**`, '', '```text');
   for (const key of ['morning', 'daytime', 'evening', 'night']) out.push(row(slotInfo[key][0], slots[key], 'commits', total));
-  out.push('```', `📅 **I'm Most Productive on ${topDay}**`, '', '```text');
+  out.push('```', `**I'm Most Productive on ${topDay}**`, '', '```text');
   for (const [name, n] of Object.entries(days)) out.push(row(name, n, 'commits', total));
   out.push('```', '');
   if (langEntries.length > 0) {

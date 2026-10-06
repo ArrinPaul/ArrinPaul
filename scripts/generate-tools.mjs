@@ -7,6 +7,12 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const OUT = process.env.CARDS_DIR || 'assets/cards';
+// Brand logos (path data from Simple Icons) are embedded in the image. Tools without a logo get a monogram.
+const LOGOS = JSON.parse(fs.readFileSync(new URL('./tool-logos.json', import.meta.url), 'utf8'));
+const MONOGRAM = { BullMQ: 'BQ', Genkit: 'Gk', AWS: 'aws', Playwright: 'Pw' };
+// Very dark brand colours disappear on a dark card, so those logos are drawn in light grey.
+const lum = (hex) => { const n = parseInt(hex, 16); return (0.2126 * (n >> 16) + 0.7152 * ((n >> 8) & 255) + 0.0722 * (n & 255)) / 255; };
+const logoColor = (hex) => (lum(hex) < 0.3 ? '#c9d1d9' : '#' + hex);
 
 const GROUPS = [
   { name: 'Languages', color: '#58a6ff', tools: ['Python', 'TypeScript', 'JavaScript', 'Java', 'C', 'HTML', 'CSS', 'LaTeX'] },
@@ -23,6 +29,13 @@ const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replac
 // Rough text width for 13px sans-serif; chips are padded so a small error never clips the label.
 const textW = (s) => Math.round(s.length * 7.7 + 4);
 
+function icon(name, ix, iy, accent) {
+  const logo = LOGOS[name];
+  if (logo) return `<path transform="translate(${ix} ${iy}) scale(0.667)" d="${logo.d}" fill="${logoColor(logo.hex)}"/>`;
+  const m = MONOGRAM[name] || name.slice(0, 2);
+  return `<rect x="${ix}" y="${iy}" width="16" height="16" rx="4" fill="none" stroke="${accent}"/><text x="${ix + 8}" y="${iy + 11}" text-anchor="middle" style="font-size:7.5px;font-weight:700;fill:${accent}">${esc(m)}</text>`;
+}
+
 let y = 70;
 const parts = [];
 // Legend
@@ -35,12 +48,12 @@ for (const g of GROUPS) {
 let x = PAD;
 for (const g of GROUPS) {
   for (const t of g.tools) {
-    const w = textW(t) + 34;
+    const w = textW(t) + 48;
     if (x + w > W - PAD) { x = PAD; y += CHIP_H + GAP; }
     parts.push(
       `<g><rect x="${x}" y="${y}" width="${w}" height="${CHIP_H}" rx="14" fill="#161b22" stroke="${g.color}" stroke-opacity=".55"/>` +
-        `<circle cx="${x + 15}" cy="${y + CHIP_H / 2}" r="4" fill="${g.color}"/>` +
-        `<text x="${x + 27}" y="${y + 18}" class="c">${esc(t)}</text></g>`,
+        icon(t, x + 10, y + 6, g.color) +
+        `<text x="${x + 33}" y="${y + 18}" class="c">${esc(t)}</text></g>`,
     );
     x += w + GAP;
   }
