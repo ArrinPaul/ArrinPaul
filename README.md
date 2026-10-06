@@ -31,23 +31,19 @@
 ## GitHub Stats
 
 <div align="center">
-  <img src="./assets/cards/stats.svg" width="49%" alt="GitHub stats" />
-  <img src="./assets/cards/streak.svg" width="49%" alt="Contribution streak" />
+  <img src="./assets/cards/stats.svg" width="70%" alt="GitHub stats" />
   <br><br>
-  <img src="./assets/cards/languages.svg" width="49%" alt="Most used languages" />
-  <img src="./assets/cards/activity.svg" width="49%" alt="Daily contributions over the last 30 days" />
+  <img src="./assets/cards/streak.svg" width="70%" alt="Contribution streak" />
+  <br><br>
+  <img src="./assets/cards/languages.svg" width="70%" alt="Most used languages" />
+  <br><br>
+  <img src="./assets/cards/activity.svg" width="70%" alt="Daily contributions over the last 30 days" />
 </div>
 
 ## Contribution Calendar
 
 <div align="center">
   <img src="./assets/cards/heatmap.svg" width="98%" alt="Contribution heatmap for the last 12 months" />
-</div>
-
-## Git Graph
-
-<div align="center">
-  <img src="./assets/cards/gitgraph.svg" width="98%" alt="Git graph of my latest commits across public repositories" />
 </div>
 
 ## Coding Habits

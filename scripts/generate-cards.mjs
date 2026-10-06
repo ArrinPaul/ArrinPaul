@@ -15,7 +15,6 @@ import path from 'node:path';
 
 const TOKEN = process.env.GH_TOKEN || process.env.GITHUB_TOKEN;
 const OUT = process.env.CARDS_DIR || 'assets/cards';
-const OWNER_LOGIN = (process.env.GITHUB_REPOSITORY_OWNER || 'ArrinPaul').toLowerCase(); // the profile repo is skipped in "Latest work"
 const DRY_RUN = process.argv.includes('--dry-run');
 // In automation, refuse to publish numbers that cannot see private contributions.
 const REQUIRE_PRIVATE = process.env.REQUIRE_PRIVATE === 'true';
@@ -88,7 +87,7 @@ ${body}
 async function loadData() {
   const base = await gql(`query {
     viewer {
-      id login name createdAt
+      login name createdAt
       followers { totalCount }
       pullRequests { totalCount }
       mergedPullRequests: pullRequests(states: MERGED) { totalCount }
@@ -124,29 +123,8 @@ async function loadData() {
     for (const w of d.viewer.contributionsCollection.contributionCalendar.weeks)
       for (const day of w.contributionDays) days.set(day.date, day.contributionCount);
   }
-  // Recent commits of mine in the most recently pushed PUBLIC repositories only, so private project
-  // names and commit messages never appear on the profile.
-  const gitData = await gql(
-    `query($id: ID!) {
-      viewer {
-        repositories(ownerAffiliations: OWNER, isFork: false, privacy: PUBLIC, first: 10, orderBy: {field: PUSHED_AT, direction: DESC}) {
-          nodes {
-            name
-            defaultBranchRef { target { ... on Commit { history(first: 12, author: {id: $id}) { nodes { oid messageHeadline committedDate } } } } }
-          }
-        }
-      }
-    }`,
-    { id: v.id },
-  );
-  const commits = [];
-  for (const r of gitData.viewer.repositories.nodes) {
-    if (r.name.toLowerCase() === OWNER_LOGIN) continue; // the profile repo is mostly bot commits
-    for (const c of r.defaultBranchRef?.target?.history?.nodes || []) commits.push({ repo: r.name, sha: c.oid.slice(0, 7), message: c.messageHeadline, date: c.committedDate });
-  }
-  commits.sort((a, b) => new Date(b.date) - new Date(a.date));
   const calendar = v.contributionsCollection.contributionCalendar;
-  return { v, repos, commits, days, yearTotal: calendar.totalContributions, weeks: calendar.weeks };
+  return { v, repos, days, yearTotal: calendar.totalContributions, weeks: calendar.weeks };
 }
 
 function streaks(days) {
@@ -200,7 +178,7 @@ function statsCard({ v, repos }) {
     const x = 24 + col * 240, y = 66 + row * 30;
     body.push(`<text x="${x}" y="${y}" class="l">${esc(label)}</text><text x="${x + 215}" y="${y}" class="v" text-anchor="end">${fmt(val)}</text>`);
   });
-  return frame(495, 180, 'GitHub stats', body.join('\n'), 'Totals from GitHub: contributions, commits, pull requests, reviews, issues, stars, repositories and followers.');
+  return frame(495, 180, 'GitHub stats', body.join('\n'), 'Totals from GitHub: contributions, commits, pull requests, reviews, issues, stars and followers.');
 }
 
 function streakCard({ days, yearTotal }) {
@@ -247,50 +225,6 @@ function languagesCard({ repos }) {
     body.push(`<circle cx="${px + 5}" cy="${py - 4}" r="5" fill="${colors.get(name)}"/><text x="${px + 18}" y="${py}" class="l">${esc(name)}</text><text x="${px + 215}" y="${py}" class="v" text-anchor="end">${((size / total) * 100).toFixed(1)}%</text>`);
   });
   return frame(495, 180, 'Most used languages', body.join('\n'), `Top languages: ${top.map(([n]) => n).join(', ')}.`);
-}
-
-// A "git log --graph" style picture: my latest commits across my public repositories, one lane per repository.
-function gitGraphCard({ commits }) {
-  // lanes: the 4 most recently active repositories; rows: their latest commits, newest first
-  const lanes = [];
-  for (const c of commits) if (!lanes.includes(c.repo) && lanes.length < 4) lanes.push(c.repo);
-  const rows = commits.filter((c) => lanes.includes(c.repo)).slice(0, 12);
-  const LANE_COLORS = ['#58a6ff', '#3fb950', '#a371f7', '#f0883e', '#f778ba', '#79c0ff'];
-  const laneOf = (repo) => lanes.indexOf(repo);
-  const W = 800, ROW = 36, TOP = 62, LANE_W = 24, X0 = 36;
-  const textX = X0 + lanes.length * LANE_W + 20;
-  const H = TOP + rows.length * ROW + 24;
-  const today = new Date();
-  const ago = (iso) => {
-    const d = Math.floor((today - new Date(iso)) / 86400000);
-    return d <= 0 ? 'today' : d === 1 ? 'yesterday' : `${d} days ago`;
-  };
-  const clip = (s, n) => (s.length > n ? `${s.slice(0, n - 3).trimEnd()}...` : s);
-  const laneX = (l) => X0 + l * LANE_W;
-  const rowY = (i) => TOP + i * ROW + ROW / 2;
-  const body = [
-    `<text x="24" y="34" class="h">Git graph</text>`,
-    `<text x="${W - 24}" y="34" class="m" text-anchor="end">My latest commits in public repositories</text>`,
-  ];
-  // lane lines run from a lane's first commit to its last, so branches look connected
-  lanes.forEach((repo, l) => {
-    const idx = rows.map((c, i) => (c.repo === repo ? i : -1)).filter((i) => i >= 0);
-    if (idx.length > 1) body.push(`<line x1="${laneX(l)}" y1="${rowY(idx[0])}" x2="${laneX(l)}" y2="${rowY(idx[idx.length - 1])}" stroke="${LANE_COLORS[l]}" stroke-width="2" stroke-opacity=".7"/>`);
-  });
-  rows.forEach((c, i) => {
-    const l = laneOf(c.repo);
-    const y = rowY(i);
-    if (i > 0 && rows[i - 1].repo !== c.repo && l >= 0) {
-      // a short curve from the previous commit's lane to this lane, like a branch switch
-      const pl = laneOf(rows[i - 1].repo);
-      if (pl >= 0) body.push(`<path d="M${laneX(pl)} ${rowY(i - 1)} C${laneX(pl)} ${y - ROW / 3}, ${laneX(l)} ${y - ROW / 2}, ${laneX(l)} ${y}" fill="none" stroke="${LANE_COLORS[pl]}" stroke-width="1.5" stroke-opacity=".35"/>`);
-    }
-    const color = l >= 0 ? LANE_COLORS[l] : C.muted;
-    body.push(`<circle cx="${laneX(Math.max(l, 0))}" cy="${y}" r="5.5" fill="${C.bg}" stroke="${color}" stroke-width="2.5"/>`);
-    body.push(`<text x="${textX}" y="${y + 4}" class="v" style="font-weight:500">${esc(clip(c.message, 58))}</text>`);
-    body.push(`<text x="${W - 24}" y="${y + 4}" class="m" text-anchor="end">${esc(c.repo)}  ·  ${esc(c.sha)}  ·  ${esc(ago(c.date))}</text>`);
-  });
-  return frame(W, H, 'Git graph', body.join('\n'), `Latest commits: ${rows.map((c) => `${c.repo} ${c.message}`).join('; ')}.`);
 }
 
 function activityCard({ days }) {
@@ -372,7 +306,6 @@ async function main() {
     'stats.svg': statsCard(data),
     'streak.svg': streakCard(data),
     'languages.svg': languagesCard(data),
-    'gitgraph.svg': gitGraphCard(data),
     'activity.svg': activityCard(data),
     'heatmap.svg': heatmapCard(data),
     'quote.svg': quoteCard().svg,
