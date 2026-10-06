@@ -195,10 +195,9 @@ function streakCard({ days, yearTotal }) {
     `<circle cx="247" cy="86" r="${R}" fill="none" stroke="${C.grid}" stroke-width="5"/><circle cx="247" cy="86" r="${R}" fill="none" stroke="#f0883e" stroke-width="5" stroke-linecap="round" stroke-dasharray="${(circ * frac).toFixed(1)} ${circ.toFixed(1)}" transform="rotate(-90 247 86)"/>`,
     `<text x="247" y="96" class="big" text-anchor="middle">${s.current.len}</text><text x="247" y="136" class="l" text-anchor="middle">Current streak (days)</text><text x="247" y="155" class="m" text-anchor="middle">${esc(range(s.current))}</text>`,
     `<line x1="330" y1="62" x2="330" y2="156" stroke="${C.grid}"/>`,
-    col(412, `${s.longest.len}`, 'Longest streak (days)', range(s.longest)),
-    `<text x="24" y="188" class="m">Private contributions included. An empty day today does not break the streak yet.</text>`,
+    col(412, `${s.longest.len}`, 'Longest streak (days)', range(s.longest)),
   ];
-  return frame(495, 205, 'Contribution streak', body.join('\n'), `${yearTotal} contributions in the last 12 months, current streak ${s.current.len} days, longest streak ${s.longest.len} days.`);
+  return frame(495, 180, 'Contribution streak', body.join('\n'), `${yearTotal} contributions in the last 12 months, current streak ${s.current.len} days, longest streak ${s.longest.len} days.`);
 }
 
 function languagesCard({ repos }) {
