@@ -30,15 +30,19 @@
 
 ## GitHub Stats
 
-<div align="center">
-  <img src="./assets/cards/stats.svg" width="70%" alt="GitHub stats" />
-  <br><br>
-  <img src="./assets/cards/streak.svg" width="70%" alt="Contribution streak" />
-  <br><br>
-  <img src="./assets/cards/languages.svg" width="70%" alt="Most used languages" />
-  <br><br>
-  <img src="./assets/cards/activity.svg" width="70%" alt="Daily contributions over the last 30 days" />
-</div>
+<table align="center">
+  <tr>
+    <td align="center"><img src="./assets/cards/stats.svg" width="410" alt="GitHub stats" /></td>
+    <td width="16"></td>
+    <td align="center"><img src="./assets/cards/streak.svg" width="410" alt="Contribution streak" /></td>
+  </tr>
+  <tr><td colspan="3" height="16"></td></tr>
+  <tr>
+    <td align="center"><img src="./assets/cards/languages.svg" width="410" alt="Most used languages" /></td>
+    <td width="16"></td>
+    <td align="center"><img src="./assets/cards/activity.svg" width="410" alt="Daily contributions over the last 30 days" /></td>
+  </tr>
+</table>
 
 ## Contribution Calendar
 
