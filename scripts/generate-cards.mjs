@@ -88,7 +88,7 @@ ${body}
 async function loadData() {
   const base = await gql(`query {
     viewer {
-      login name createdAt
+      id login name createdAt
       followers { totalCount }
       pullRequests { totalCount }
       mergedPullRequests: pullRequests(states: MERGED) { totalCount }
@@ -124,17 +124,29 @@ async function loadData() {
     for (const w of d.viewer.contributionsCollection.contributionCalendar.weeks)
       for (const day of w.contributionDays) days.set(day.date, day.contributionCount);
   }
-  // Most recently pushed PUBLIC repositories only, so private project names never appear on the profile.
-  const recentData = await gql(`query {
-    viewer {
-      repositories(ownerAffiliations: OWNER, isFork: false, privacy: PUBLIC, first: 12, orderBy: {field: PUSHED_AT, direction: DESC}) {
-        nodes { name description pushedAt primaryLanguage { name color } }
+  // Recent commits of mine in the most recently pushed PUBLIC repositories only, so private project
+  // names and commit messages never appear on the profile.
+  const gitData = await gql(
+    `query($id: ID!) {
+      viewer {
+        repositories(ownerAffiliations: OWNER, isFork: false, privacy: PUBLIC, first: 10, orderBy: {field: PUSHED_AT, direction: DESC}) {
+          nodes {
+            name
+            defaultBranchRef { target { ... on Commit { history(first: 12, author: {id: $id}) { nodes { oid messageHeadline committedDate } } } } }
+          }
+        }
       }
-    }
-  }`);
-  const recent = recentData.viewer.repositories.nodes.filter((r) => r.name.toLowerCase() !== OWNER_LOGIN).slice(0, 4);
+    }`,
+    { id: v.id },
+  );
+  const commits = [];
+  for (const r of gitData.viewer.repositories.nodes) {
+    if (r.name.toLowerCase() === OWNER_LOGIN) continue; // the profile repo is mostly bot commits
+    for (const c of r.defaultBranchRef?.target?.history?.nodes || []) commits.push({ repo: r.name, sha: c.oid.slice(0, 7), message: c.messageHeadline, date: c.committedDate });
+  }
+  commits.sort((a, b) => new Date(b.date) - new Date(a.date));
   const calendar = v.contributionsCollection.contributionCalendar;
-  return { v, repos, recent, days, yearTotal: calendar.totalContributions, weeks: calendar.weeks };
+  return { v, repos, commits, days, yearTotal: calendar.totalContributions, weeks: calendar.weeks };
 }
 
 function streaks(days) {
@@ -237,42 +249,68 @@ function languagesCard({ repos }) {
   return frame(495, 180, 'Most used languages', body.join('\n'), `Top languages: ${top.map(([n]) => n).join(', ')}.`);
 }
 
-function recentCard({ recent }) {
+// A "git log --graph" style picture: my latest commits across my public repositories, one lane per repository.
+function gitGraphCard({ commits }) {
+  // lanes: the 4 most recently active repositories; rows: their latest commits, newest first
+  const lanes = [];
+  for (const c of commits) if (!lanes.includes(c.repo) && lanes.length < 4) lanes.push(c.repo);
+  const rows = commits.filter((c) => lanes.includes(c.repo)).slice(0, 12);
+  const LANE_COLORS = ['#58a6ff', '#3fb950', '#a371f7', '#f0883e', '#f778ba', '#79c0ff'];
+  const laneOf = (repo) => lanes.indexOf(repo);
+  const W = 800, ROW = 36, TOP = 62, LANE_W = 24, X0 = 36;
+  const textX = X0 + lanes.length * LANE_W + 20;
+  const H = TOP + rows.length * ROW + 24;
   const today = new Date();
   const ago = (iso) => {
-    const days = Math.floor((today - new Date(iso)) / 86400000);
-    return days <= 0 ? 'today' : days === 1 ? 'yesterday' : `${days} days ago`;
+    const d = Math.floor((today - new Date(iso)) / 86400000);
+    return d <= 0 ? 'today' : d === 1 ? 'yesterday' : `${d} days ago`;
   };
-  const clip = (s, n) => (s.length > n ? `${s.slice(0, n - 1).trimEnd()}...` : s);
-  const body = [`<text x="24" y="34" class="h">Latest work</text>`];
-  recent.forEach((r, i) => {
-    const y = 64 + i * 32;
-    const lang = r.primaryLanguage;
-    if (lang) body.push(`<circle cx="30" cy="${y - 4}" r="4" fill="${lang.color || C.muted}"/>`);
-    body.push(`<text x="42" y="${y}" class="v">${esc(r.name)}</text><text x="471" y="${y}" class="m" text-anchor="end">${esc(ago(r.pushedAt))}</text>`);
-    if (r.description) body.push(`<text x="42" y="${y + 14}" class="m">${esc(clip(r.description, 72))}</text>`);
+  const clip = (s, n) => (s.length > n ? `${s.slice(0, n - 3).trimEnd()}...` : s);
+  const laneX = (l) => X0 + l * LANE_W;
+  const rowY = (i) => TOP + i * ROW + ROW / 2;
+  const body = [
+    `<text x="24" y="34" class="h">Git graph</text>`,
+    `<text x="${W - 24}" y="34" class="m" text-anchor="end">My latest commits in public repositories</text>`,
+  ];
+  // lane lines run from a lane's first commit to its last, so branches look connected
+  lanes.forEach((repo, l) => {
+    const idx = rows.map((c, i) => (c.repo === repo ? i : -1)).filter((i) => i >= 0);
+    if (idx.length > 1) body.push(`<line x1="${laneX(l)}" y1="${rowY(idx[0])}" x2="${laneX(l)}" y2="${rowY(idx[idx.length - 1])}" stroke="${LANE_COLORS[l]}" stroke-width="2" stroke-opacity=".7"/>`);
   });
-  return frame(495, 180, 'Latest work', body.join('\n'), `Most recently updated public repositories: ${recent.map((r) => r.name).join(', ')}.`);
+  rows.forEach((c, i) => {
+    const l = laneOf(c.repo);
+    const y = rowY(i);
+    if (i > 0 && rows[i - 1].repo !== c.repo && l >= 0) {
+      // a short curve from the previous commit's lane to this lane, like a branch switch
+      const pl = laneOf(rows[i - 1].repo);
+      if (pl >= 0) body.push(`<path d="M${laneX(pl)} ${rowY(i - 1)} C${laneX(pl)} ${y - ROW / 3}, ${laneX(l)} ${y - ROW / 2}, ${laneX(l)} ${y}" fill="none" stroke="${LANE_COLORS[pl]}" stroke-width="1.5" stroke-opacity=".35"/>`);
+    }
+    const color = l >= 0 ? LANE_COLORS[l] : C.muted;
+    body.push(`<circle cx="${laneX(Math.max(l, 0))}" cy="${y}" r="5.5" fill="${C.bg}" stroke="${color}" stroke-width="2.5"/>`);
+    body.push(`<text x="${textX}" y="${y + 4}" class="v" style="font-weight:500">${esc(clip(c.message, 58))}</text>`);
+    body.push(`<text x="${W - 24}" y="${y + 4}" class="m" text-anchor="end">${esc(c.repo)}  ·  ${esc(c.sha)}  ·  ${esc(ago(c.date))}</text>`);
+  });
+  return frame(W, H, 'Git graph', body.join('\n'), `Latest commits: ${rows.map((c) => `${c.repo} ${c.message}`).join('; ')}.`);
 }
 
 function activityCard({ days }) {
   const dates = [...days.keys()].sort().slice(-30);
   const vals = dates.map((d) => days.get(d));
   const max = Math.max(5, ...vals);
-  const W = 800, H = 260, L = 48, R = 20, T = 56, B = 40;
+  const W = 495, H = 180, L = 40, R = 18, T = 54, B = 34;
   const px = (i) => L + (i * (W - L - R)) / (vals.length - 1);
   const py = (v) => T + (1 - v / max) * (H - T - B);
   const line = vals.map((v, i) => `${i ? 'L' : 'M'}${px(i).toFixed(1)} ${py(v).toFixed(1)}`).join(' ');
   const area = `${line} L${px(vals.length - 1).toFixed(1)} ${H - B} L${px(0).toFixed(1)} ${H - B} Z`;
   const ticks = [0, 0.5, 1].map((f) => Math.round(max * f));
   const body = [
-    `<text x="24" y="34" class="h">Contribution activity, last 30 days</text>`,
+    `<text x="24" y="34" class="h">Last 30 days</text>`,
     `<text x="${W - 24}" y="34" class="m" text-anchor="end">${fmt(vals.reduce((a, b) => a + b, 0))} contributions</text>`,
     ...ticks.map((t) => `<line x1="${L}" y1="${py(t)}" x2="${W - R}" y2="${py(t)}" stroke="${C.grid}"/><text x="${L - 8}" y="${py(t) + 4}" class="m" text-anchor="end">${t}</text>`),
     `<linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${C.accent}" stop-opacity=".45"/><stop offset="1" stop-color="${C.accent}" stop-opacity="0"/></linearGradient>`,
     `<path d="${area}" fill="url(#g)"/><path d="${line}" fill="none" stroke="${C.accent}" stroke-width="2" stroke-linejoin="round"/>`,
     ...vals.map((v, i) => `<circle cx="${px(i).toFixed(1)}" cy="${py(v).toFixed(1)}" r="${v > 0 ? 3 : 1.5}" fill="${v > 0 ? C.accent : C.muted}"><title>${esc(dayLabel(dates[i]))}: ${v}</title></circle>`),
-    ...[0, 7, 14, 21, 29].map((i) => `<text x="${px(i).toFixed(1)}" y="${H - 14}" class="m" text-anchor="middle">${esc(dayLabel(dates[i]))}</text>`),
+    ...[0, 10, 20, 29].map((i) => `<text x="${px(i).toFixed(1)}" y="${H - 14}" class="m" text-anchor="middle">${esc(dayLabel(dates[i]))}</text>`),
   ];
   return frame(W, H, 'Contribution activity', body.join('\n'), `Daily contributions between ${dates[0]} and ${dates[dates.length - 1]}.`);
 }
@@ -334,7 +372,7 @@ async function main() {
     'stats.svg': statsCard(data),
     'streak.svg': streakCard(data),
     'languages.svg': languagesCard(data),
-    'recent.svg': recentCard(data),
+    'gitgraph.svg': gitGraphCard(data),
     'activity.svg': activityCard(data),
     'heatmap.svg': heatmapCard(data),
     'quote.svg': quoteCard().svg,

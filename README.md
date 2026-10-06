@@ -28,25 +28,29 @@
   <img src="./assets/cards/tools.svg" alt="Tools and frameworks: Python, TypeScript, JavaScript, Java, C, React, Next.js, Angular, Node.js, FastAPI, Spring Boot, PostgreSQL, MongoDB, Supabase, PyTorch, TensorFlow, OpenCV, Docker and more" />
 </div>
 
-## GitHub at a Glance
+## GitHub Stats
 
 <div align="center">
   <img src="./assets/cards/stats.svg" width="49%" alt="GitHub stats" />
   <img src="./assets/cards/streak.svg" width="49%" alt="Contribution streak" />
-  <br>
+  <br><br>
   <img src="./assets/cards/languages.svg" width="49%" alt="Most used languages" />
-  <img src="./assets/cards/recent.svg" width="49%" alt="Latest work: most recently updated public repositories" />
-  <br>
+  <img src="./assets/cards/activity.svg" width="49%" alt="Daily contributions over the last 30 days" />
+</div>
+
+## Contribution Calendar
+
+<div align="center">
   <img src="./assets/cards/heatmap.svg" width="98%" alt="Contribution heatmap for the last 12 months" />
 </div>
 
-<details>
-<summary><b>More activity: last 30 days and coding habits</b></summary>
-<br>
+## Git Graph
 
 <div align="center">
-  <img src="./assets/cards/activity.svg" width="98%" alt="Daily contributions over the last 30 days" />
+  <img src="./assets/cards/gitgraph.svg" width="98%" alt="Git graph of my latest commits across public repositories" />
 </div>
+
+## Coding Habits
 
 <!--START_SECTION:activity-->
 **I'm a Daytime Coder**
@@ -80,10 +84,10 @@ Java                     1 repo              █░░░░░░░░░░�
 
 <!--END_SECTION:activity-->
 
-</details>
+## Contribution Pacman
 
 <div align="center">
   <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/ArrinPaul/ArrinPaul/output/pacman-contribution-graph-dark.svg" />
-  <br>
+  <br><br>
   <img src="./assets/cards/quote.svg" width="98%" alt="Quote of the day" />
 </div>
