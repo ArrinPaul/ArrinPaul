@@ -131,10 +131,6 @@ export function buildBlock({ commits, repoCount, languages, publicOnly }) {
     for (const [name, n] of langEntries.slice(0, 6)) out.push(row(name, n, n === 1 ? 'repo' : 'repos', langTotal));
     out.push('```', '');
   }
-  const scope = publicOnly ? 'public repositories' : 'public and private repositories';
-  out.push(
-    `<sub>Based on ${total} commits across ${repoCount} ${scope} (own repos, no forks). Each commit is counted once, even if it is on several branches. Times are in ${TZ}.</sub>`,
-  );
   return out.join('\n');
 }
 
