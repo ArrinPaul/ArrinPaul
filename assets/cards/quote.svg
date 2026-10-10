@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="94" viewBox="0 0 800 94" role="img" aria-labelledby="t d">
-<title id="t">Quote of the day</title><desc id="d">Simplicity is prerequisite for reliability. Edsger W. Dijkstra</desc>
+<title id="t">Quote of the day</title><desc id="d">Talk is cheap. Show me the code. Linus Torvalds</desc>
 <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d1117"/><stop offset="1" stop-color="#101826"/></linearGradient>
 <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#58a6ff"/><stop offset="0.5" stop-color="#a371f7"/><stop offset="1" stop-color="#3fb950"/></linearGradient></defs>
 <rect x="0.5" y="0.5" rx="8" width="799" height="93" fill="url(#bg)" stroke="#30363d"/>
 <rect x="1" y="1" rx="1.5" width="798" height="3" fill="url(#bar)" opacity=".85"/>
 <style>text{font-family:'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif}.h{font-size:16px;font-weight:600;fill:#58a6ff}.l{font-size:13px;fill:#c9d1d9}.v{font-size:13px;font-weight:600;fill:#c9d1d9}.m{font-size:11px;fill:#8b949e}.big{font-size:28px;font-weight:700;fill:#c9d1d9}</style>
-<text x="400" y="42" class="l" font-size="16" text-anchor="middle" font-style="italic" style="font-size:16px">“Simplicity is prerequisite for reliability.”</text>
-<text x="400" y="76" class="m" text-anchor="middle">Edsger W. Dijkstra</text>
+<text x="400" y="42" class="l" font-size="16" text-anchor="middle" font-style="italic" style="font-size:16px">“Talk is cheap. Show me the code.”</text>
+<text x="400" y="76" class="m" text-anchor="middle">Linus Torvalds</text>
 </svg>
