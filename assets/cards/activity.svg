@@ -6,12 +6,12 @@
 <rect x="1" y="1" rx="1.5" width="493" height="3" fill="url(#bar)" opacity=".85"/>
 <style>text{font-family:'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif}.h{font-size:16px;font-weight:600;fill:#58a6ff}.l{font-size:13px;fill:#c9d1d9}.v{font-size:13px;font-weight:600;fill:#c9d1d9}.m{font-size:11px;fill:#8b949e}.big{font-size:28px;font-weight:700;fill:#c9d1d9}</style>
 <text x="24" y="34" class="h">Last 30 days</text>
-<text x="471" y="34" class="m" text-anchor="end">530 contributions</text>
+<text x="471" y="34" class="m" text-anchor="end">535 contributions</text>
 <line x1="40" y1="146" x2="477" y2="146" stroke="#21262d"/><text x="32" y="150" class="m" text-anchor="end">0</text>
 <line x1="40" y1="99.80590717299577" x2="477" y2="99.80590717299577" stroke="#21262d"/><text x="32" y="103.80590717299577" class="m" text-anchor="end">119</text>
 <line x1="40" y1="54" x2="477" y2="54" stroke="#21262d"/><text x="32" y="58" class="m" text-anchor="end">237</text>
 <linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3fb950" stop-opacity=".45"/><stop offset="1" stop-color="#3fb950" stop-opacity="0"/></linearGradient>
-<path d="M40.0 141.7 L55.1 142.1 L70.1 139.8 L85.2 144.4 L100.3 146.0 L115.3 146.0 L130.4 143.3 L145.5 146.0 L160.6 142.1 L175.6 146.0 L190.7 146.0 L205.8 138.6 L220.8 141.7 L235.9 146.0 L251.0 141.7 L266.0 137.8 L281.1 139.8 L296.2 54.0 L311.2 136.7 L326.3 146.0 L341.4 145.2 L356.4 138.6 L371.5 146.0 L386.6 110.3 L401.7 146.0 L416.7 146.0 L431.8 146.0 L446.9 138.2 L461.9 146.0 L477.0 146.0 L477.0 146 L40.0 146 Z" fill="url(#g)"/><path d="M40.0 141.7 L55.1 142.1 L70.1 139.8 L85.2 144.4 L100.3 146.0 L115.3 146.0 L130.4 143.3 L145.5 146.0 L160.6 142.1 L175.6 146.0 L190.7 146.0 L205.8 138.6 L220.8 141.7 L235.9 146.0 L251.0 141.7 L266.0 137.8 L281.1 139.8 L296.2 54.0 L311.2 136.7 L326.3 146.0 L341.4 145.2 L356.4 138.6 L371.5 146.0 L386.6 110.3 L401.7 146.0 L416.7 146.0 L431.8 146.0 L446.9 138.2 L461.9 146.0 L477.0 146.0" fill="none" stroke="#3fb950" stroke-width="2" stroke-linejoin="round"/>
+<path d="M40.0 141.7 L55.1 142.1 L70.1 139.8 L85.2 144.4 L100.3 146.0 L115.3 146.0 L130.4 143.3 L145.5 146.0 L160.6 142.1 L175.6 146.0 L190.7 146.0 L205.8 138.6 L220.8 141.7 L235.9 146.0 L251.0 141.7 L266.0 137.8 L281.1 139.8 L296.2 54.0 L311.2 136.7 L326.3 146.0 L341.4 145.2 L356.4 138.6 L371.5 146.0 L386.6 110.3 L401.7 146.0 L416.7 146.0 L431.8 146.0 L446.9 138.2 L461.9 146.0 L477.0 144.1 L477.0 146 L40.0 146 Z" fill="url(#g)"/><path d="M40.0 141.7 L55.1 142.1 L70.1 139.8 L85.2 144.4 L100.3 146.0 L115.3 146.0 L130.4 143.3 L145.5 146.0 L160.6 142.1 L175.6 146.0 L190.7 146.0 L205.8 138.6 L220.8 141.7 L235.9 146.0 L251.0 141.7 L266.0 137.8 L281.1 139.8 L296.2 54.0 L311.2 136.7 L326.3 146.0 L341.4 145.2 L356.4 138.6 L371.5 146.0 L386.6 110.3 L401.7 146.0 L416.7 146.0 L431.8 146.0 L446.9 138.2 L461.9 146.0 L477.0 144.1" fill="none" stroke="#3fb950" stroke-width="2" stroke-linejoin="round"/>
 <circle cx="40.0" cy="141.7" r="3" fill="#3fb950"><title>Sep 13: 11</title></circle>
 <circle cx="55.1" cy="142.1" r="3" fill="#3fb950"><title>Sep 14: 10</title></circle>
 <circle cx="70.1" cy="139.8" r="3" fill="#3fb950"><title>Sep 15: 16</title></circle>
@@ -41,7 +41,7 @@
 <circle cx="431.8" cy="146.0" r="1.5" fill="#8b949e"><title>Oct 9: 0</title></circle>
 <circle cx="446.9" cy="138.2" r="3" fill="#3fb950"><title>Oct 10: 20</title></circle>
 <circle cx="461.9" cy="146.0" r="1.5" fill="#8b949e"><title>Oct 11: 0</title></circle>
-<circle cx="477.0" cy="146.0" r="1.5" fill="#8b949e"><title>Oct 12: 0</title></circle>
+<circle cx="477.0" cy="144.1" r="3" fill="#3fb950"><title>Oct 12: 5</title></circle>
 <text x="40.0" y="166" class="m" text-anchor="middle">Sep 13</text>
 <text x="190.7" y="166" class="m" text-anchor="middle">Sep 23</text>
 <text x="341.4" y="166" class="m" text-anchor="middle">Oct 3</text>
