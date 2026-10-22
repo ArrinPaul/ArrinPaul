@@ -56,21 +56,21 @@
 **I'm a Daytime Coder**
 
 ```text
-Morning                  282 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.09 % 
-Daytime                  791 commits         █████████░░░░░░░░░░░░░░░░   36.71 % 
-Evening                  604 commits         ███████░░░░░░░░░░░░░░░░░░   28.03 % 
-Night                    478 commits         ██████░░░░░░░░░░░░░░░░░░░   22.18 % 
+Morning                  282 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.97 % 
+Daytime                  791 commits         █████████░░░░░░░░░░░░░░░░   36.37 % 
+Evening                  604 commits         ███████░░░░░░░░░░░░░░░░░░   27.77 % 
+Night                    498 commits         ██████░░░░░░░░░░░░░░░░░░░   22.90 % 
 ```
 **I'm Most Productive on Tuesday**
 
 ```text
-Monday                   336 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.59 % 
-Tuesday                  532 commits         ██████░░░░░░░░░░░░░░░░░░░   24.69 % 
-Wednesday                337 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.64 % 
-Thursday                 284 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.18 % 
-Friday                   209 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   09.70 % 
-Saturday                 274 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.71 % 
-Sunday                   183 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   08.49 % 
+Monday                   336 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.45 % 
+Tuesday                  532 commits         ██████░░░░░░░░░░░░░░░░░░░   24.46 % 
+Wednesday                337 commits         ████░░░░░░░░░░░░░░░░░░░░░   15.49 % 
+Thursday                 284 commits         ███░░░░░░░░░░░░░░░░░░░░░░   13.06 % 
+Friday                   229 commits         ███░░░░░░░░░░░░░░░░░░░░░░   10.53 % 
+Saturday                 274 commits         ███░░░░░░░░░░░░░░░░░░░░░░   12.60 % 
+Sunday                   183 commits         ██░░░░░░░░░░░░░░░░░░░░░░░   08.41 % 
 ```
 
 **I Mostly Code in TypeScript**
