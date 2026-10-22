@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="495" height="180" viewBox="0 0 495 180" role="img" aria-labelledby="t d">
-<title id="t">Contribution activity</title><desc id="d">Daily contributions between 2026-09-22 and 2026-10-21.</desc>
+<title id="t">Contribution activity</title><desc id="d">Daily contributions between 2026-09-23 and 2026-10-22.</desc>
 <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d1117"/><stop offset="1" stop-color="#101826"/></linearGradient>
 <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#58a6ff"/><stop offset="0.5" stop-color="#a371f7"/><stop offset="1" stop-color="#3fb950"/></linearGradient></defs>
 <rect x="0.5" y="0.5" rx="8" width="494" height="179" fill="url(#bg)" stroke="#30363d"/>
@@ -11,39 +11,39 @@
 <line x1="40" y1="99.80590717299577" x2="477" y2="99.80590717299577" stroke="#21262d"/><text x="32" y="103.80590717299577" class="m" text-anchor="end">119</text>
 <line x1="40" y1="54" x2="477" y2="54" stroke="#21262d"/><text x="32" y="58" class="m" text-anchor="end">237</text>
 <linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3fb950" stop-opacity=".45"/><stop offset="1" stop-color="#3fb950" stop-opacity="0"/></linearGradient>
-<path d="M40.0 146.0 L55.1 146.0 L70.1 138.6 L85.2 141.7 L100.3 146.0 L115.3 141.7 L130.4 137.8 L145.5 139.8 L160.6 54.0 L175.6 136.7 L190.7 146.0 L205.8 145.2 L220.8 138.6 L235.9 146.0 L251.0 110.7 L266.0 146.0 L281.1 146.0 L296.2 146.0 L311.2 138.2 L326.3 146.0 L341.4 144.1 L356.4 144.8 L371.5 146.0 L386.6 146.0 L401.7 146.0 L416.7 146.0 L431.8 144.1 L446.9 146.0 L461.9 140.2 L477.0 146.0 L477.0 146 L40.0 146 Z" fill="url(#g)"/><path d="M40.0 146.0 L55.1 146.0 L70.1 138.6 L85.2 141.7 L100.3 146.0 L115.3 141.7 L130.4 137.8 L145.5 139.8 L160.6 54.0 L175.6 136.7 L190.7 146.0 L205.8 145.2 L220.8 138.6 L235.9 146.0 L251.0 110.7 L266.0 146.0 L281.1 146.0 L296.2 146.0 L311.2 138.2 L326.3 146.0 L341.4 144.1 L356.4 144.8 L371.5 146.0 L386.6 146.0 L401.7 146.0 L416.7 146.0 L431.8 144.1 L446.9 146.0 L461.9 140.2 L477.0 146.0" fill="none" stroke="#3fb950" stroke-width="2" stroke-linejoin="round"/>
-<circle cx="40.0" cy="146.0" r="1.5" fill="#8b949e"><title>Sep 22: 0</title></circle>
-<circle cx="55.1" cy="146.0" r="1.5" fill="#8b949e"><title>Sep 23: 0</title></circle>
-<circle cx="70.1" cy="138.6" r="3" fill="#3fb950"><title>Sep 24: 19</title></circle>
-<circle cx="85.2" cy="141.7" r="3" fill="#3fb950"><title>Sep 25: 11</title></circle>
-<circle cx="100.3" cy="146.0" r="1.5" fill="#8b949e"><title>Sep 26: 0</title></circle>
-<circle cx="115.3" cy="141.7" r="3" fill="#3fb950"><title>Sep 27: 11</title></circle>
-<circle cx="130.4" cy="137.8" r="3" fill="#3fb950"><title>Sep 28: 21</title></circle>
-<circle cx="145.5" cy="139.8" r="3" fill="#3fb950"><title>Sep 29: 16</title></circle>
-<circle cx="160.6" cy="54.0" r="3" fill="#3fb950"><title>Sep 30: 237</title></circle>
-<circle cx="175.6" cy="136.7" r="3" fill="#3fb950"><title>Oct 1: 24</title></circle>
-<circle cx="190.7" cy="146.0" r="1.5" fill="#8b949e"><title>Oct 2: 0</title></circle>
-<circle cx="205.8" cy="145.2" r="3" fill="#3fb950"><title>Oct 3: 2</title></circle>
-<circle cx="220.8" cy="138.6" r="3" fill="#3fb950"><title>Oct 4: 19</title></circle>
-<circle cx="235.9" cy="146.0" r="1.5" fill="#8b949e"><title>Oct 5: 0</title></circle>
-<circle cx="251.0" cy="110.7" r="3" fill="#3fb950"><title>Oct 6: 91</title></circle>
-<circle cx="266.0" cy="146.0" r="1.5" fill="#8b949e"><title>Oct 7: 0</title></circle>
-<circle cx="281.1" cy="146.0" r="1.5" fill="#8b949e"><title>Oct 8: 0</title></circle>
-<circle cx="296.2" cy="146.0" r="1.5" fill="#8b949e"><title>Oct 9: 0</title></circle>
-<circle cx="311.2" cy="138.2" r="3" fill="#3fb950"><title>Oct 10: 20</title></circle>
-<circle cx="326.3" cy="146.0" r="1.5" fill="#8b949e"><title>Oct 11: 0</title></circle>
-<circle cx="341.4" cy="144.1" r="3" fill="#3fb950"><title>Oct 12: 5</title></circle>
-<circle cx="356.4" cy="144.8" r="3" fill="#3fb950"><title>Oct 13: 3</title></circle>
-<circle cx="371.5" cy="146.0" r="1.5" fill="#8b949e"><title>Oct 14: 0</title></circle>
-<circle cx="386.6" cy="146.0" r="1.5" fill="#8b949e"><title>Oct 15: 0</title></circle>
-<circle cx="401.7" cy="146.0" r="1.5" fill="#8b949e"><title>Oct 16: 0</title></circle>
-<circle cx="416.7" cy="146.0" r="1.5" fill="#8b949e"><title>Oct 17: 0</title></circle>
-<circle cx="431.8" cy="144.1" r="3" fill="#3fb950"><title>Oct 18: 5</title></circle>
-<circle cx="446.9" cy="146.0" r="1.5" fill="#8b949e"><title>Oct 19: 0</title></circle>
-<circle cx="461.9" cy="140.2" r="3" fill="#3fb950"><title>Oct 20: 15</title></circle>
-<circle cx="477.0" cy="146.0" r="1.5" fill="#8b949e"><title>Oct 21: 0</title></circle>
-<text x="40.0" y="166" class="m" text-anchor="middle">Sep 22</text>
-<text x="190.7" y="166" class="m" text-anchor="middle">Oct 2</text>
-<text x="341.4" y="166" class="m" text-anchor="middle">Oct 12</text>
-<text x="477.0" y="166" class="m" text-anchor="middle">Oct 21</text>
+<path d="M40.0 146.0 L55.1 138.6 L70.1 141.7 L85.2 146.0 L100.3 141.7 L115.3 137.8 L130.4 139.8 L145.5 54.0 L160.6 136.7 L175.6 146.0 L190.7 145.2 L205.8 138.6 L220.8 146.0 L235.9 110.7 L251.0 146.0 L266.0 146.0 L281.1 146.0 L296.2 138.2 L311.2 146.0 L326.3 144.1 L341.4 144.8 L356.4 146.0 L371.5 146.0 L386.6 146.0 L401.7 146.0 L416.7 144.1 L431.8 146.0 L446.9 140.2 L461.9 146.0 L477.0 146.0 L477.0 146 L40.0 146 Z" fill="url(#g)"/><path d="M40.0 146.0 L55.1 138.6 L70.1 141.7 L85.2 146.0 L100.3 141.7 L115.3 137.8 L130.4 139.8 L145.5 54.0 L160.6 136.7 L175.6 146.0 L190.7 145.2 L205.8 138.6 L220.8 146.0 L235.9 110.7 L251.0 146.0 L266.0 146.0 L281.1 146.0 L296.2 138.2 L311.2 146.0 L326.3 144.1 L341.4 144.8 L356.4 146.0 L371.5 146.0 L386.6 146.0 L401.7 146.0 L416.7 144.1 L431.8 146.0 L446.9 140.2 L461.9 146.0 L477.0 146.0" fill="none" stroke="#3fb950" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="40.0" cy="146.0" r="1.5" fill="#8b949e"><title>Sep 23: 0</title></circle>
+<circle cx="55.1" cy="138.6" r="3" fill="#3fb950"><title>Sep 24: 19</title></circle>
+<circle cx="70.1" cy="141.7" r="3" fill="#3fb950"><title>Sep 25: 11</title></circle>
+<circle cx="85.2" cy="146.0" r="1.5" fill="#8b949e"><title>Sep 26: 0</title></circle>
+<circle cx="100.3" cy="141.7" r="3" fill="#3fb950"><title>Sep 27: 11</title></circle>
+<circle cx="115.3" cy="137.8" r="3" fill="#3fb950"><title>Sep 28: 21</title></circle>
+<circle cx="130.4" cy="139.8" r="3" fill="#3fb950"><title>Sep 29: 16</title></circle>
+<circle cx="145.5" cy="54.0" r="3" fill="#3fb950"><title>Sep 30: 237</title></circle>
+<circle cx="160.6" cy="136.7" r="3" fill="#3fb950"><title>Oct 1: 24</title></circle>
+<circle cx="175.6" cy="146.0" r="1.5" fill="#8b949e"><title>Oct 2: 0</title></circle>
+<circle cx="190.7" cy="145.2" r="3" fill="#3fb950"><title>Oct 3: 2</title></circle>
+<circle cx="205.8" cy="138.6" r="3" fill="#3fb950"><title>Oct 4: 19</title></circle>
+<circle cx="220.8" cy="146.0" r="1.5" fill="#8b949e"><title>Oct 5: 0</title></circle>
+<circle cx="235.9" cy="110.7" r="3" fill="#3fb950"><title>Oct 6: 91</title></circle>
+<circle cx="251.0" cy="146.0" r="1.5" fill="#8b949e"><title>Oct 7: 0</title></circle>
+<circle cx="266.0" cy="146.0" r="1.5" fill="#8b949e"><title>Oct 8: 0</title></circle>
+<circle cx="281.1" cy="146.0" r="1.5" fill="#8b949e"><title>Oct 9: 0</title></circle>
+<circle cx="296.2" cy="138.2" r="3" fill="#3fb950"><title>Oct 10: 20</title></circle>
+<circle cx="311.2" cy="146.0" r="1.5" fill="#8b949e"><title>Oct 11: 0</title></circle>
+<circle cx="326.3" cy="144.1" r="3" fill="#3fb950"><title>Oct 12: 5</title></circle>
+<circle cx="341.4" cy="144.8" r="3" fill="#3fb950"><title>Oct 13: 3</title></circle>
+<circle cx="356.4" cy="146.0" r="1.5" fill="#8b949e"><title>Oct 14: 0</title></circle>
+<circle cx="371.5" cy="146.0" r="1.5" fill="#8b949e"><title>Oct 15: 0</title></circle>
+<circle cx="386.6" cy="146.0" r="1.5" fill="#8b949e"><title>Oct 16: 0</title></circle>
+<circle cx="401.7" cy="146.0" r="1.5" fill="#8b949e"><title>Oct 17: 0</title></circle>
+<circle cx="416.7" cy="144.1" r="3" fill="#3fb950"><title>Oct 18: 5</title></circle>
+<circle cx="431.8" cy="146.0" r="1.5" fill="#8b949e"><title>Oct 19: 0</title></circle>
+<circle cx="446.9" cy="140.2" r="3" fill="#3fb950"><title>Oct 20: 15</title></circle>
+<circle cx="461.9" cy="146.0" r="1.5" fill="#8b949e"><title>Oct 21: 0</title></circle>
+<circle cx="477.0" cy="146.0" r="1.5" fill="#8b949e"><title>Oct 22: 0</title></circle>
+<text x="40.0" y="166" class="m" text-anchor="middle">Sep 23</text>
+<text x="190.7" y="166" class="m" text-anchor="middle">Oct 3</text>
+<text x="341.4" y="166" class="m" text-anchor="middle">Oct 13</text>
+<text x="477.0" y="166" class="m" text-anchor="middle">Oct 22</text>
 </svg>
