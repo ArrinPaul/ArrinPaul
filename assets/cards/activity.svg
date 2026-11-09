@@ -6,12 +6,12 @@
 <rect x="1" y="1" rx="1.5" width="493" height="3" fill="url(#bar)" opacity=".85"/>
 <style>text{font-family:'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif}.h{font-size:16px;font-weight:600;fill:#58a6ff}.l{font-size:13px;fill:#c9d1d9}.v{font-size:13px;font-weight:600;fill:#c9d1d9}.m{font-size:11px;fill:#8b949e}.big{font-size:28px;font-weight:700;fill:#c9d1d9}</style>
 <text x="24" y="34" class="h">Last 30 days</text>
-<text x="471" y="34" class="m" text-anchor="end">116 contributions</text>
+<text x="471" y="34" class="m" text-anchor="end">139 contributions</text>
 <line x1="40" y1="146" x2="477" y2="146" stroke="#21262d"/><text x="32" y="150" class="m" text-anchor="end">0</text>
 <line x1="40" y1="98.41379310344827" x2="477" y2="98.41379310344827" stroke="#21262d"/><text x="32" y="102.41379310344827" class="m" text-anchor="end">15</text>
 <line x1="40" y1="54" x2="477" y2="54" stroke="#21262d"/><text x="32" y="58" class="m" text-anchor="end">29</text>
 <linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3fb950" stop-opacity=".45"/><stop offset="1" stop-color="#3fb950" stop-opacity="0"/></linearGradient>
-<path d="M40.0 146.0 L55.1 130.1 L70.1 136.5 L85.2 146.0 L100.3 142.8 L115.3 146.0 L130.4 146.0 L145.5 130.1 L160.6 146.0 L175.6 69.9 L190.7 146.0 L205.8 146.0 L220.8 54.0 L235.9 146.0 L251.0 146.0 L266.0 146.0 L281.1 142.8 L296.2 146.0 L311.2 142.8 L326.3 146.0 L341.4 146.0 L356.4 123.8 L371.5 142.8 L386.6 82.6 L401.7 111.1 L416.7 123.8 L431.8 146.0 L446.9 146.0 L461.9 146.0 L477.0 142.8 L477.0 146 L40.0 146 Z" fill="url(#g)"/><path d="M40.0 146.0 L55.1 130.1 L70.1 136.5 L85.2 146.0 L100.3 142.8 L115.3 146.0 L130.4 146.0 L145.5 130.1 L160.6 146.0 L175.6 69.9 L190.7 146.0 L205.8 146.0 L220.8 54.0 L235.9 146.0 L251.0 146.0 L266.0 146.0 L281.1 142.8 L296.2 146.0 L311.2 142.8 L326.3 146.0 L341.4 146.0 L356.4 123.8 L371.5 142.8 L386.6 82.6 L401.7 111.1 L416.7 123.8 L431.8 146.0 L446.9 146.0 L461.9 146.0 L477.0 142.8" fill="none" stroke="#3fb950" stroke-width="2" stroke-linejoin="round"/>
+<path d="M40.0 146.0 L55.1 130.1 L70.1 136.5 L85.2 146.0 L100.3 142.8 L115.3 146.0 L130.4 146.0 L145.5 130.1 L160.6 146.0 L175.6 69.9 L190.7 146.0 L205.8 146.0 L220.8 54.0 L235.9 146.0 L251.0 146.0 L266.0 146.0 L281.1 142.8 L296.2 146.0 L311.2 142.8 L326.3 146.0 L341.4 146.0 L356.4 123.8 L371.5 142.8 L386.6 82.6 L401.7 79.4 L416.7 123.8 L431.8 120.6 L446.9 146.0 L461.9 146.0 L477.0 127.0 L477.0 146 L40.0 146 Z" fill="url(#g)"/><path d="M40.0 146.0 L55.1 130.1 L70.1 136.5 L85.2 146.0 L100.3 142.8 L115.3 146.0 L130.4 146.0 L145.5 130.1 L160.6 146.0 L175.6 69.9 L190.7 146.0 L205.8 146.0 L220.8 54.0 L235.9 146.0 L251.0 146.0 L266.0 146.0 L281.1 142.8 L296.2 146.0 L311.2 142.8 L326.3 146.0 L341.4 146.0 L356.4 123.8 L371.5 142.8 L386.6 82.6 L401.7 79.4 L416.7 123.8 L431.8 120.6 L446.9 146.0 L461.9 146.0 L477.0 127.0" fill="none" stroke="#3fb950" stroke-width="2" stroke-linejoin="round"/>
 <circle cx="40.0" cy="146.0" r="1.5" fill="#8b949e"><title>Oct 11: 0</title></circle>
 <circle cx="55.1" cy="130.1" r="3" fill="#3fb950"><title>Oct 12: 5</title></circle>
 <circle cx="70.1" cy="136.5" r="3" fill="#3fb950"><title>Oct 13: 3</title></circle>
@@ -36,12 +36,12 @@
 <circle cx="356.4" cy="123.8" r="3" fill="#3fb950"><title>Nov 1: 7</title></circle>
 <circle cx="371.5" cy="142.8" r="3" fill="#3fb950"><title>Nov 2: 1</title></circle>
 <circle cx="386.6" cy="82.6" r="3" fill="#3fb950"><title>Nov 3: 20</title></circle>
-<circle cx="401.7" cy="111.1" r="3" fill="#3fb950"><title>Nov 4: 11</title></circle>
+<circle cx="401.7" cy="79.4" r="3" fill="#3fb950"><title>Nov 4: 21</title></circle>
 <circle cx="416.7" cy="123.8" r="3" fill="#3fb950"><title>Nov 5: 7</title></circle>
-<circle cx="431.8" cy="146.0" r="1.5" fill="#8b949e"><title>Nov 6: 0</title></circle>
+<circle cx="431.8" cy="120.6" r="3" fill="#3fb950"><title>Nov 6: 8</title></circle>
 <circle cx="446.9" cy="146.0" r="1.5" fill="#8b949e"><title>Nov 7: 0</title></circle>
 <circle cx="461.9" cy="146.0" r="1.5" fill="#8b949e"><title>Nov 8: 0</title></circle>
-<circle cx="477.0" cy="142.8" r="3" fill="#3fb950"><title>Nov 9: 1</title></circle>
+<circle cx="477.0" cy="127.0" r="3" fill="#3fb950"><title>Nov 9: 6</title></circle>
 <text x="40.0" y="166" class="m" text-anchor="middle">Oct 11</text>
 <text x="190.7" y="166" class="m" text-anchor="middle">Oct 21</text>
 <text x="341.4" y="166" class="m" text-anchor="middle">Oct 31</text>
